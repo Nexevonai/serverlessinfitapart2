@@ -1,7 +1,7 @@
 {
   "120": {
     "inputs": {
-      "model": "Wan2_1-InfiniteTalk_Single_Q6_K_2.gguf"
+      "model": "InfiniteTalk/Wan2_1-InfiniteTalk_Single_Q6_K.gguf"
     },
     "class_type": "MultiTalkModelLoader",
     "_meta": {
@@ -120,7 +120,7 @@
   },
   "138": {
     "inputs": {
-      "lora": "lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors",
+      "lora": "Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors",
       "strength": 0.8,
       "low_mem_load": false,
       "merge_loras": false

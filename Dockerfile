@@ -108,7 +108,8 @@ RUN /venv/bin/python -m pip install \
     einops \
     safetensors \
     demucs \
-    accelerate
+    accelerate \
+    sageattention
 
 # --- 8. 复制脚本并设置权限 ---
 # --- 关键修改：不再复制 workflow_api.json ---
