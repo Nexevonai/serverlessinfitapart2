@@ -45,21 +45,19 @@ RUN mkdir -p \
 # --- 6. 下载 WanVideo 模型文件 ---
 # Main I2V model (Q4_0 quantized, ~10.2GB)
 RUN /venv/bin/huggingface-cli download city96/Wan2.1-I2V-14B-480P-gguf \
-    wan2.1-i2v-14b-480p-Q4_0_2.gguf \
+    wan2.1-i2v-14b-480p-Q4_0.gguf \
     --local-dir $COMFYUI_PATH/models/unet \
     --local-dir-use-symlinks False
 
 # InfiniteTalk model (GGUF, ~2.04GB)
 RUN /venv/bin/huggingface-cli download Kijai/WanVideo_comfy_GGUF \
-    InfiniteTalk/Wan2_1-InfiniteTalk_Single_Q6_K_2.gguf \
+    InfiniteTalk/Wan2_1-InfiniteTalk_Single_Q6_K.gguf \
     --local-dir $COMFYUI_PATH/models/unet \
     --local-dir-use-symlinks False
 
-# Text encoder (FP8, ~6.73GB)
-RUN /venv/bin/huggingface-cli download Kijai/WanVideo_comfy \
-    umt5-xxl-enc-fp8_e4m3fn.safetensors \
-    --local-dir $COMFYUI_PATH/models/text_encoders \
-    --local-dir-use-symlinks False
+# Text encoder (FP8 scaled, ~6.74GB)
+RUN wget -O $COMFYUI_PATH/models/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors \
+    "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors"
 
 # VAE (~254MB)
 RUN wget -O $COMFYUI_PATH/models/vae/wan_2.1_vae.safetensors \
@@ -71,7 +69,7 @@ RUN wget -O $COMFYUI_PATH/models/clip_vision/clip_vision_h.safetensors \
 
 # Distill LoRA (~738MB - for 4-step fast generation)
 RUN /venv/bin/huggingface-cli download Kijai/WanVideo_comfy \
-    Lightx2v/Wan2.1-lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors \
+    Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors \
     --local-dir $COMFYUI_PATH/models/loras \
     --local-dir-use-symlinks False
 
