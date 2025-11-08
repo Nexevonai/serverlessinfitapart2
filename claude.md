@@ -450,3 +450,5 @@ Based on RunPod RTX 4090 (24GB VRAM):
 - **2025-11-08**: Converted from Vibe Voice TTS to WanVideo 2.1 InfiniteTalk
 - **Previous**: Vibe Voice TTS voice cloning workflow
 - **Original**: upscale2flare image upscaling project
+
+.
