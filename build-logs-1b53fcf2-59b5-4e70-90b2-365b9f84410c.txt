@@ -1,0 +1,500 @@
+2025-11-09T02:01:40.698Z [INFO] #22 3.526 Requirement already satisfied: nvidia-curand-cu12==10.3.9.90 in /venv/lib/python3.11/site-packages (from torch>=2.0.0->accelerate>=1.2.1->-r requirements.txt (line 2)) (10.3.9.90)
+2025-11-09T02:01:40.699Z [INFO] #22 3.526 Requirement already satisfied: nvidia-cusolver-cu12==11.7.3.90 in /venv/lib/python3.11/site-packages (from torch>=2.0.0->accelerate>=1.2.1->-r requirements.txt (line 2)) (11.7.3.90)
+2025-11-09T02:01:40.701Z [INFO] #22 3.527 Requirement already satisfied: nvidia-cusparse-cu12==12.5.8.93 in /venv/lib/python3.11/site-packages (from torch>=2.0.0->accelerate>=1.2.1->-r requirements.txt (line 2)) (12.5.8.93)
+2025-11-09T02:01:40.702Z [INFO] #22 3.527 Requirement already satisfied: nvidia-cusparselt-cu12==0.7.1 in /venv/lib/python3.11/site-packages (from torch>=2.0.0->accelerate>=1.2.1->-r requirements.txt (line 2)) (0.7.1)
+2025-11-09T02:01:40.703Z [INFO] #22 3.527 Requirement already satisfied: nvidia-nccl-cu12==2.27.5 in /venv/lib/python3.11/site-packages (from torch>=2.0.0->accelerate>=1.2.1->-r requirements.txt (line 2)) (2.27.5)
+2025-11-09T02:01:40.705Z [INFO] #22 3.528 Requirement already satisfied: nvidia-nvshmem-cu12==3.3.20 in /venv/lib/python3.11/site-packages (from torch>=2.0.0->accelerate>=1.2.1->-r requirements.txt (line 2)) (3.3.20)
+2025-11-09T02:01:40.706Z [INFO] #22 3.528 Requirement already satisfied: nvidia-nvtx-cu12==12.8.90 in /venv/lib/python3.11/site-packages (from torch>=2.0.0->accelerate>=1.2.1->-r requirements.txt (line 2)) (12.8.90)
+2025-11-09T02:01:40.708Z [INFO] #22 3.528 Requirement already satisfied: nvidia-nvjitlink-cu12==12.8.93 in /venv/lib/python3.11/site-packages (from torch>=2.0.0->accelerate>=1.2.1->-r requirements.txt (line 2)) (12.8.93)
+2025-11-09T02:01:40.709Z [INFO] #22 3.529 Requirement already satisfied: nvidia-cufile-cu12==1.13.1.3 in /venv/lib/python3.11/site-packages (from torch>=2.0.0->accelerate>=1.2.1->-r requirements.txt (line 2)) (1.13.1.3)
+2025-11-09T02:01:40.710Z [INFO] #22 3.529 Requirement already satisfied: triton==3.5.0 in /venv/lib/python3.11/site-packages (from torch>=2.0.0->accelerate>=1.2.1->-r requirements.txt (line 2)) (3.5.0)
+2025-11-09T02:01:40.712Z [INFO] #22 3.543 Requirement already satisfied: mpmath<1.4,>=1.1.0 in /venv/lib/python3.11/site-packages (from sympy>=1.13.3->torch>=2.0.0->accelerate>=1.2.1->-r requirements.txt (line 2)) (1.3.0)
+2025-11-09T02:01:40.713Z [INFO] #22 3.579 Collecting zipp>=3.20 (from importlib_metadata->diffusers>=0.33.0->-r requirements.txt (line 4))
+2025-11-09T02:01:40.799Z [INFO] #22 3.602   Downloading zipp-3.23.0-py3-none-any.whl.metadata (3.6 kB)
+2025-11-09T02:01:40.802Z [INFO] #22 3.607 Requirement already satisfied: MarkupSafe>=2.0 in /venv/lib/python3.11/site-packages (from jinja2->torch>=2.0.0->accelerate>=1.2.1->-r requirements.txt (line 2)) (3.0.3)
+2025-11-09T02:01:40.803Z [INFO] #22 3.613 Requirement already satisfied: charset_normalizer<4,>=2 in /venv/lib/python3.11/site-packages (from requests->diffusers>=0.33.0->-r requirements.txt (line 4)) (3.4.4)
+2025-11-09T02:01:40.805Z [INFO] #22 3.613 Requirement already satisfied: idna<4,>=2.5 in /venv/lib/python3.11/site-packages (from requests->diffusers>=0.33.0->-r requirements.txt (line 4)) (3.11)
+2025-11-09T02:01:40.807Z [INFO] #22 3.614 Requirement already satisfied: urllib3<3,>=1.21.1 in /venv/lib/python3.11/site-packages (from requests->diffusers>=0.33.0->-r requirements.txt (line 4)) (2.5.0)
+2025-11-09T02:01:40.808Z [INFO] #22 3.614 Requirement already satisfied: certifi>=2017.4.17 in /venv/lib/python3.11/site-packages (from requests->diffusers>=0.33.0->-r requirements.txt (line 4)) (2025.10.5)
+2025-11-09T02:01:40.810Z [INFO] #22 3.621 Requirement already satisfied: tokenizers<=0.23.0,>=0.22.0 in /venv/lib/python3.11/site-packages (from transformers->peft>=0.17.0->-r requirements.txt (line 5)) (0.22.1)
+2025-11-09T02:01:40.811Z [INFO] #22 3.665 Downloading ftfy-6.3.1-py3-none-any.whl (44 kB)
+2025-11-09T02:01:40.813Z [INFO] #22 3.701 Downloading accelerate-1.11.0-py3-none-any.whl (375 kB)
+2025-11-09T02:01:40.956Z [INFO] #22 3.776 Downloading diffusers-0.35.2-py3-none-any.whl (4.1 MB)
+2025-11-09T02:01:40.958Z [INFO] #22 3.858    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.1/4.1 MB 51.4 MB/s  0:00:00
+2025-11-09T02:01:41.057Z [INFO] #22 3.882 Downloading peft-0.17.1-py3-none-any.whl (504 kB)
+2025-11-09T02:01:41.059Z [INFO] #22 3.908 Downloading protobuf-6.33.0-cp39-abi3-manylinux2014_x86_64.whl (323 kB)
+2025-11-09T02:01:41.061Z [INFO] #22 3.934 Downloading pyloudnorm-0.1.1-py3-none-any.whl (9.6 kB)
+2025-11-09T02:01:41.062Z [INFO] #22 3.959 Downloading gguf-0.17.1-py3-none-any.whl (96 kB)
+2025-11-09T02:01:41.250Z [INFO] #22 3.982 Downloading future-1.0.0-py3-none-any.whl (491 kB)
+2025-11-09T02:01:41.252Z [INFO] #22 4.008 Downloading importlib_metadata-8.7.0-py3-none-any.whl (27 kB)
+2025-11-09T02:01:41.253Z [INFO] #22 4.032 Downloading zipp-3.23.0-py3-none-any.whl (10 kB)
+2025-11-09T02:01:41.253Z [INFO] #22 4.152 Installing collected packages: zipp, protobuf, gguf, future, ftfy, pyloudnorm, importlib_metadata, diffusers, accelerate, peft
+2025-11-09T02:01:43.320Z [INFO] #22 6.221
+2025-11-09T02:01:43.475Z [INFO] #22 6.226 Successfully installed accelerate-1.11.0 diffusers-0.35.2 ftfy-6.3.1 future-1.0.0 gguf-0.17.1 importlib_metadata-8.7.0 peft-0.17.1 protobuf-6.33.0 pyloudnorm-0.1.1 zipp-3.23.0
+2025-11-09T02:01:43.523Z [INFO] #22 DONE 6.4s
+2025-11-09T02:01:43.673Z [INFO] 
+2025-11-09T02:01:43.675Z [INFO] #23 [16/25] RUN git clone https://github.com/christian-byrne/audio-separation-nodes-comfyui.git     /root/comfy/ComfyUI/custom_nodes/audio-separation-nodes-comfyui &&     cd /root/comfy/ComfyUI/custom_nodes/audio-separation-nodes-comfyui &&     /venv/bin/python -m pip install -r requirements.txt || true
+2025-11-09T02:01:43.758Z [INFO] #23 0.236 Cloning into '/root/comfy/ComfyUI/custom_nodes/audio-separation-nodes-comfyui'...
+2025-11-09T02:01:47.301Z [INFO] #23 3.778 Collecting librosa==0.10.2 (from -r requirements.txt (line 1))
+2025-11-09T02:01:47.427Z [INFO] #23 3.904   Downloading librosa-0.10.2-py3-none-any.whl.metadata (8.6 kB)
+2025-11-09T02:01:47.644Z [INFO] #23 3.914 Requirement already satisfied: torchaudio>=2.3.0 in /venv/lib/python3.11/site-packages (from -r requirements.txt (line 2)) (2.9.0)
+2025-11-09T02:01:47.646Z [INFO] #23 3.914 Requirement already satisfied: numpy in /venv/lib/python3.11/site-packages (from -r requirements.txt (line 3)) (2.2.6)
+2025-11-09T02:01:47.648Z [INFO] #23 3.956 Collecting moviepy (from -r requirements.txt (line 4))
+2025-11-09T02:01:47.650Z [INFO] #23 3.984   Downloading moviepy-2.2.1-py3-none-any.whl.metadata (6.9 kB)
+2025-11-09T02:01:47.651Z [INFO] #23 4.121 Collecting audioread>=2.1.9 (from librosa==0.10.2->-r requirements.txt (line 1))
+2025-11-09T02:01:47.827Z [INFO] #23 4.149   Downloading audioread-3.1.0-py3-none-any.whl.metadata (9.0 kB)
+2025-11-09T02:01:47.828Z [INFO] #23 4.159 Requirement already satisfied: scipy>=1.2.0 in /venv/lib/python3.11/site-packages (from librosa==0.10.2->-r requirements.txt (line 1)) (1.16.3)
+2025-11-09T02:01:47.830Z [INFO] #23 4.304 Collecting scikit-learn>=0.20.0 (from librosa==0.10.2->-r requirements.txt (line 1))
+2025-11-09T02:01:47.960Z [INFO] #23 4.331   Downloading scikit_learn-1.7.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (11 kB)
+2025-11-09T02:01:47.961Z [INFO] #23 4.376 Collecting joblib>=0.14 (from librosa==0.10.2->-r requirements.txt (line 1))
+2025-11-09T02:01:47.962Z [INFO] #23 4.403   Downloading joblib-1.5.2-py3-none-any.whl.metadata (5.6 kB)
+2025-11-09T02:01:47.963Z [INFO] #23 4.438 Collecting decorator>=4.3.0 (from librosa==0.10.2->-r requirements.txt (line 1))
+2025-11-09T02:01:48.087Z [INFO] #23 4.464   Downloading decorator-5.2.1-py3-none-any.whl.metadata (3.9 kB)
+2025-11-09T02:01:48.088Z [INFO] #23 4.564 Collecting numba>=0.51.0 (from librosa==0.10.2->-r requirements.txt (line 1))
+2025-11-09T02:01:48.216Z [INFO] #23 4.590   Downloading numba-0.62.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.8 kB)
+2025-11-09T02:01:48.217Z [INFO] #23 4.627 Collecting soundfile>=0.12.1 (from librosa==0.10.2->-r requirements.txt (line 1))
+2025-11-09T02:01:48.219Z [INFO] #23 4.653   Downloading soundfile-0.13.1-py2.py3-none-manylinux_2_28_x86_64.whl.metadata (16 kB)
+2025-11-09T02:01:48.219Z [INFO] #23 4.693 Collecting pooch>=1.1 (from librosa==0.10.2->-r requirements.txt (line 1))
+2025-11-09T02:01:48.334Z [INFO] #23 4.720   Downloading pooch-1.8.2-py3-none-any.whl.metadata (10 kB)
+2025-11-09T02:01:48.336Z [INFO] #23 4.784 Collecting soxr>=0.3.2 (from librosa==0.10.2->-r requirements.txt (line 1))
+2025-11-09T02:01:48.336Z [INFO] #23 4.812   Downloading soxr-1.0.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.6 kB)
+2025-11-09T02:01:48.463Z [INFO] #23 4.815 Requirement already satisfied: typing-extensions>=4.1.1 in /venv/lib/python3.11/site-packages (from librosa==0.10.2->-r requirements.txt (line 1)) (4.15.0)
+2025-11-09T02:01:48.464Z [INFO] #23 4.845 Collecting lazy-loader>=0.1 (from librosa==0.10.2->-r requirements.txt (line 1))
+2025-11-09T02:01:48.465Z [INFO] #23 4.871   Downloading lazy_loader-0.4-py3-none-any.whl.metadata (7.6 kB)
+2025-11-09T02:01:48.465Z [INFO] #23 4.940 Collecting msgpack>=1.0 (from librosa==0.10.2->-r requirements.txt (line 1))
+2025-11-09T02:01:48.582Z [INFO] #23 4.967   Downloading msgpack-1.1.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.1 kB)
+2025-11-09T02:01:48.584Z [INFO] #23 4.971 Requirement already satisfied: torch==2.9.0 in /venv/lib/python3.11/site-packages (from torchaudio>=2.3.0->-r requirements.txt (line 2)) (2.9.0)
+2025-11-09T02:01:48.584Z [INFO] #23 4.972 Requirement already satisfied: filelock in /venv/lib/python3.11/site-packages (from torch==2.9.0->torchaudio>=2.3.0->-r requirements.txt (line 2)) (3.20.0)
+2025-11-09T02:01:48.585Z [INFO] #23 4.973 Requirement already satisfied: sympy>=1.13.3 in /venv/lib/python3.11/site-packages (from torch==2.9.0->torchaudio>=2.3.0->-r requirements.txt (line 2)) (1.14.0)
+2025-11-09T02:01:48.586Z [INFO] #23 4.973 Requirement already satisfied: networkx>=2.5.1 in /venv/lib/python3.11/site-packages (from torch==2.9.0->torchaudio>=2.3.0->-r requirements.txt (line 2)) (3.5)
+2025-11-09T02:01:48.587Z [INFO] #23 4.973 Requirement already satisfied: jinja2 in /venv/lib/python3.11/site-packages (from torch==2.9.0->torchaudio>=2.3.0->-r requirements.txt (line 2)) (3.1.6)
+2025-11-09T02:01:48.587Z [INFO] #23 4.973 Requirement already satisfied: fsspec>=0.8.5 in /venv/lib/python3.11/site-packages (from torch==2.9.0->torchaudio>=2.3.0->-r requirements.txt (line 2)) (2025.10.0)
+2025-11-09T02:01:48.588Z [INFO] #23 4.974 Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.8.93 in /venv/lib/python3.11/site-packages (from torch==2.9.0->torchaudio>=2.3.0->-r requirements.txt (line 2)) (12.8.93)
+2025-11-09T02:01:48.589Z [INFO] #23 4.974 Requirement already satisfied: nvidia-cuda-runtime-cu12==12.8.90 in /venv/lib/python3.11/site-packages (from torch==2.9.0->torchaudio>=2.3.0->-r requirements.txt (line 2)) (12.8.90)
+2025-11-09T02:01:48.589Z [INFO] #23 4.974 Requirement already satisfied: nvidia-cuda-cupti-cu12==12.8.90 in /venv/lib/python3.11/site-packages (from torch==2.9.0->torchaudio>=2.3.0->-r requirements.txt (line 2)) (12.8.90)
+2025-11-09T02:01:48.590Z [INFO] #23 4.975 Requirement already satisfied: nvidia-cudnn-cu12==9.10.2.21 in /venv/lib/python3.11/site-packages (from torch==2.9.0->torchaudio>=2.3.0->-r requirements.txt (line 2)) (9.10.2.21)
+2025-11-09T02:01:48.590Z [INFO] #23 4.975 Requirement already satisfied: nvidia-cublas-cu12==12.8.4.1 in /venv/lib/python3.11/site-packages (from torch==2.9.0->torchaudio>=2.3.0->-r requirements.txt (line 2)) (12.8.4.1)
+2025-11-09T02:01:48.591Z [INFO] #23 4.976 Requirement already satisfied: nvidia-cufft-cu12==11.3.3.83 in /venv/lib/python3.11/site-packages (from torch==2.9.0->torchaudio>=2.3.0->-r requirements.txt (line 2)) (11.3.3.83)
+2025-11-09T02:01:48.592Z [INFO] #23 4.976 Requirement already satisfied: nvidia-curand-cu12==10.3.9.90 in /venv/lib/python3.11/site-packages (from torch==2.9.0->torchaudio>=2.3.0->-r requirements.txt (line 2)) (10.3.9.90)
+2025-11-09T02:01:48.592Z [INFO] #23 4.976 Requirement already satisfied: nvidia-cusolver-cu12==11.7.3.90 in /venv/lib/python3.11/site-packages (from torch==2.9.0->torchaudio>=2.3.0->-r requirements.txt (line 2)) (11.7.3.90)
+2025-11-09T02:01:48.593Z [INFO] #23 4.977 Requirement already satisfied: nvidia-cusparse-cu12==12.5.8.93 in /venv/lib/python3.11/site-packages (from torch==2.9.0->torchaudio>=2.3.0->-r requirements.txt (line 2)) (12.5.8.93)
+2025-11-09T02:01:48.593Z [INFO] #23 4.977 Requirement already satisfied: nvidia-cusparselt-cu12==0.7.1 in /venv/lib/python3.11/site-packages (from torch==2.9.0->torchaudio>=2.3.0->-r requirements.txt (line 2)) (0.7.1)
+2025-11-09T02:01:48.594Z [INFO] #23 4.978 Requirement already satisfied: nvidia-nccl-cu12==2.27.5 in /venv/lib/python3.11/site-packages (from torch==2.9.0->torchaudio>=2.3.0->-r requirements.txt (line 2)) (2.27.5)
+2025-11-09T02:01:48.595Z [INFO] #23 4.978 Requirement already satisfied: nvidia-nvshmem-cu12==3.3.20 in /venv/lib/python3.11/site-packages (from torch==2.9.0->torchaudio>=2.3.0->-r requirements.txt (line 2)) (3.3.20)
+2025-11-09T02:01:48.595Z [INFO] #23 4.978 Requirement already satisfied: nvidia-nvtx-cu12==12.8.90 in /venv/lib/python3.11/site-packages (from torch==2.9.0->torchaudio>=2.3.0->-r requirements.txt (line 2)) (12.8.90)
+2025-11-09T02:01:48.596Z [INFO] #23 4.979 Requirement already satisfied: nvidia-nvjitlink-cu12==12.8.93 in /venv/lib/python3.11/site-packages (from torch==2.9.0->torchaudio>=2.3.0->-r requirements.txt (line 2)) (12.8.93)
+2025-11-09T02:01:48.597Z [INFO] #23 4.979 Requirement already satisfied: nvidia-cufile-cu12==1.13.1.3 in /venv/lib/python3.11/site-packages (from torch==2.9.0->torchaudio>=2.3.0->-r requirements.txt (line 2)) (1.13.1.3)
+2025-11-09T02:01:48.597Z [INFO] #23 4.979 Requirement already satisfied: triton==3.5.0 in /venv/lib/python3.11/site-packages (from torch==2.9.0->torchaudio>=2.3.0->-r requirements.txt (line 2)) (3.5.0)
+2025-11-09T02:01:48.598Z [INFO] #23 5.033 Collecting imageio<3.0,>=2.5 (from moviepy->-r requirements.txt (line 4))
+2025-11-09T02:01:48.598Z [INFO] #23 5.060   Downloading imageio-2.37.2-py3-none-any.whl.metadata (9.7 kB)
+2025-11-09T02:01:48.795Z [INFO] #23 5.072 Requirement already satisfied: imageio_ffmpeg>=0.2.0 in /venv/lib/python3.11/site-packages (from moviepy->-r requirements.txt (line 4)) (0.6.0)
+2025-11-09T02:01:48.797Z [INFO] #23 5.102 Collecting proglog<=1.0.0 (from moviepy->-r requirements.txt (line 4))
+2025-11-09T02:01:48.799Z [INFO] #23 5.129   Downloading proglog-0.1.12-py3-none-any.whl.metadata (794 bytes)
+2025-11-09T02:01:48.800Z [INFO] #23 5.132 Requirement already satisfied: python-dotenv>=0.10 in /venv/lib/python3.11/site-packages (from moviepy->-r requirements.txt (line 4)) (1.2.1)
+2025-11-09T02:01:48.801Z [INFO] #23 5.273 Collecting pillow<12.0,>=9.2.0 (from moviepy->-r requirements.txt (line 4))
+2025-11-09T02:01:48.904Z [INFO] #23 5.300   Downloading pillow-11.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.0 kB)
+2025-11-09T02:01:48.906Z [INFO] #23 5.313 Requirement already satisfied: tqdm in /venv/lib/python3.11/site-packages (from proglog<=1.0.0->moviepy->-r requirements.txt (line 4)) (4.67.1)
+2025-11-09T02:01:48.907Z [INFO] #23 5.319 Requirement already satisfied: packaging in /venv/lib/python3.11/site-packages (from lazy-loader>=0.1->librosa==0.10.2->-r requirements.txt (line 1)) (25.0)
+2025-11-09T02:01:48.909Z [INFO] #23 5.381 Collecting llvmlite<0.46,>=0.45.0dev0 (from numba>=0.51.0->librosa==0.10.2->-r requirements.txt (line 1))
+2025-11-09T02:01:49.005Z [INFO] #23 5.409   Downloading llvmlite-0.45.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (4.9 kB)
+2025-11-09T02:01:49.007Z [INFO] #23 5.446 Collecting platformdirs>=2.5.0 (from pooch>=1.1->librosa==0.10.2->-r requirements.txt (line 1))
+2025-11-09T02:01:49.008Z [INFO] #23 5.473   Downloading platformdirs-4.5.0-py3-none-any.whl.metadata (12 kB)
+2025-11-09T02:01:49.010Z [INFO] #23 5.479 Requirement already satisfied: requests>=2.19.0 in /venv/lib/python3.11/site-packages (from pooch>=1.1->librosa==0.10.2->-r requirements.txt (line 1)) (2.32.5)
+2025-11-09T02:01:49.012Z [INFO] #23 5.482 Requirement already satisfied: charset_normalizer<4,>=2 in /venv/lib/python3.11/site-packages (from requests>=2.19.0->pooch>=1.1->librosa==0.10.2->-r requirements.txt (line 1)) (3.4.4)
+2025-11-09T02:01:49.119Z [INFO] #23 5.483 Requirement already satisfied: idna<4,>=2.5 in /venv/lib/python3.11/site-packages (from requests>=2.19.0->pooch>=1.1->librosa==0.10.2->-r requirements.txt (line 1)) (3.11)
+2025-11-09T02:01:49.121Z [INFO] #23 5.483 Requirement already satisfied: urllib3<3,>=1.21.1 in /venv/lib/python3.11/site-packages (from requests>=2.19.0->pooch>=1.1->librosa==0.10.2->-r requirements.txt (line 1)) (2.5.0)
+2025-11-09T02:01:49.123Z [INFO] #23 5.483 Requirement already satisfied: certifi>=2017.4.17 in /venv/lib/python3.11/site-packages (from requests>=2.19.0->pooch>=1.1->librosa==0.10.2->-r requirements.txt (line 1)) (2025.10.5)
+2025-11-09T02:01:49.125Z [INFO] #23 5.520 Collecting threadpoolctl>=3.1.0 (from scikit-learn>=0.20.0->librosa==0.10.2->-r requirements.txt (line 1))
+2025-11-09T02:01:49.126Z [INFO] #23 5.547   Downloading threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+2025-11-09T02:01:49.128Z [INFO] #23 5.558 Requirement already satisfied: cffi>=1.0 in /venv/lib/python3.11/site-packages (from soundfile>=0.12.1->librosa==0.10.2->-r requirements.txt (line 1)) (2.0.0)
+2025-11-09T02:01:49.129Z [INFO] #23 5.559 Requirement already satisfied: pycparser in /venv/lib/python3.11/site-packages (from cffi>=1.0->soundfile>=0.12.1->librosa==0.10.2->-r requirements.txt (line 1)) (2.23)
+2025-11-09T02:01:49.131Z [INFO] #23 5.561 Requirement already satisfied: mpmath<1.4,>=1.1.0 in /venv/lib/python3.11/site-packages (from sympy>=1.13.3->torch==2.9.0->torchaudio>=2.3.0->-r requirements.txt (line 2)) (1.3.0)
+2025-11-09T02:01:49.132Z [INFO] #23 5.565 Requirement already satisfied: MarkupSafe>=2.0 in /venv/lib/python3.11/site-packages (from jinja2->torch==2.9.0->torchaudio>=2.3.0->-r requirements.txt (line 2)) (3.0.3)
+2025-11-09T02:01:49.134Z [INFO] #23 5.597 Downloading librosa-0.10.2-py3-none-any.whl (260 kB)
+2025-11-09T02:01:49.244Z [INFO] #23 5.690 Downloading moviepy-2.2.1-py3-none-any.whl (129 kB)
+2025-11-09T02:01:49.246Z [INFO] #23 5.722 Downloading decorator-5.2.1-py3-none-any.whl (9.2 kB)
+2025-11-09T02:01:49.434Z [INFO] #23 5.750 Downloading imageio-2.37.2-py3-none-any.whl (317 kB)
+2025-11-09T02:01:49.436Z [INFO] #23 5.805 Downloading pillow-11.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.6 MB)
+2025-11-09T02:01:49.547Z [INFO] #23 5.911    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.6/6.6 MB 63.7 MB/s  0:00:00
+2025-11-09T02:01:49.549Z [INFO] #23 5.938 Downloading proglog-0.1.12-py3-none-any.whl (6.3 kB)
+2025-11-09T02:01:49.551Z [INFO] #23 5.967 Downloading audioread-3.1.0-py3-none-any.whl (23 kB)
+2025-11-09T02:01:49.552Z [INFO] #23 5.995 Downloading joblib-1.5.2-py3-none-any.whl (308 kB)
+2025-11-09T02:01:49.554Z [INFO] #23 6.024 Downloading lazy_loader-0.4-py3-none-any.whl (12 kB)
+2025-11-09T02:01:49.756Z [INFO] #23 6.052 Downloading msgpack-1.1.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (426 kB)
+2025-11-09T02:01:49.759Z [INFO] #23 6.082 Downloading numba-0.62.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (3.7 MB)
+2025-11-09T02:01:50.012Z [INFO] #23 6.489    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.7/3.7 MB 8.6 MB/s  0:00:00
+2025-11-09T02:01:50.189Z [INFO] #23 6.516 Downloading llvmlite-0.45.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (56.3 MB)
+2025-11-09T02:01:50.636Z [INFO] #23 6.953    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.3/56.3 MB 129.2 MB/s  0:00:00
+2025-11-09T02:01:50.638Z [INFO] #23 6.980 Downloading pooch-1.8.2-py3-none-any.whl (64 kB)
+2025-11-09T02:01:50.640Z [INFO] #23 7.008 Downloading platformdirs-4.5.0-py3-none-any.whl (18 kB)
+2025-11-09T02:01:50.642Z [INFO] #23 7.037 Downloading scikit_learn-1.7.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.7 MB)
+2025-11-09T02:01:50.883Z [INFO] #23 7.113    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.7/9.7 MB 129.4 MB/s  0:00:00
+2025-11-09T02:01:50.886Z [INFO] #23 7.140 Downloading soundfile-0.13.1-py2.py3-none-manylinux_2_28_x86_64.whl (1.3 MB)
+2025-11-09T02:01:50.887Z [INFO] #23 7.152    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 117.5 MB/s  0:00:00
+2025-11-09T02:01:50.889Z [INFO] #23 7.180 Downloading soxr-1.0.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (242 kB)
+2025-11-09T02:01:50.891Z [INFO] #23 7.209 Downloading threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+2025-11-09T02:01:50.944Z [INFO] #23 7.421 Installing collected packages: threadpoolctl, soxr, proglog, platformdirs, pillow, msgpack, llvmlite, lazy-loader, joblib, decorator, audioread, soundfile, scikit-learn, pooch, numba, imageio, moviepy, librosa
+2025-11-09T02:01:51.057Z [INFO] #23 7.450   Attempting uninstall: pillow
+2025-11-09T02:01:51.059Z [INFO] #23 7.453     Found existing installation: pillow 12.0.0
+2025-11-09T02:01:51.061Z [INFO] #23 7.460     Uninstalling pillow-12.0.0:
+2025-11-09T02:01:51.062Z [INFO] #23 7.534       Successfully uninstalled pillow-12.0.0
+2025-11-09T02:01:55.872Z [INFO] #23 12.35
+2025-11-09T02:01:56.027Z [INFO] #23 12.35 Successfully installed audioread-3.1.0 decorator-5.2.1 imageio-2.37.2 joblib-1.5.2 lazy-loader-0.4 librosa-0.10.2 llvmlite-0.45.1 moviepy-2.2.1 msgpack-1.1.2 numba-0.62.1 pillow-11.3.0 platformdirs-4.5.0 pooch-1.8.2 proglog-0.1.12 scikit-learn-1.7.2 soundfile-0.13.1 soxr-1.0.0 threadpoolctl-3.6.0
+2025-11-09T02:01:56.198Z [INFO] #23 DONE 12.7s
+2025-11-09T02:01:56.349Z [INFO] 
+2025-11-09T02:01:56.351Z [INFO] #24 [17/25] RUN git clone https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite.git     /root/comfy/ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite &&     cd /root/comfy/ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite &&     /venv/bin/python -m pip install -r requirements.txt || true
+2025-11-09T02:01:56.437Z [INFO] #24 0.239 Cloning into '/root/comfy/ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite'...
+2025-11-09T02:01:57.382Z [INFO] #24 1.184 Requirement already satisfied: opencv-python in /venv/lib/python3.11/site-packages (from -r requirements.txt (line 1)) (4.12.0.88)
+2025-11-09T02:01:57.534Z [INFO] #24 1.184 Requirement already satisfied: imageio-ffmpeg in /venv/lib/python3.11/site-packages (from -r requirements.txt (line 2)) (0.6.0)
+2025-11-09T02:01:57.536Z [INFO] #24 1.185 Requirement already satisfied: numpy<2.3.0,>=2 in /venv/lib/python3.11/site-packages (from opencv-python->-r requirements.txt (line 1)) (2.2.6)
+2025-11-09T02:01:57.607Z [INFO] #24 DONE 1.4s
+2025-11-09T02:01:57.758Z [INFO] 
+2025-11-09T02:01:57.759Z [INFO] #25 [18/25] RUN git clone https://github.com/kijai/ComfyUI-KJNodes.git     /root/comfy/ComfyUI/custom_nodes/ComfyUI-KJNodes &&     cd /root/comfy/ComfyUI/custom_nodes/ComfyUI-KJNodes &&     /venv/bin/python -m pip install -r requirements.txt || true
+2025-11-09T02:01:57.854Z [INFO] #25 0.246 Cloning into '/root/comfy/ComfyUI/custom_nodes/ComfyUI-KJNodes'...
+2025-11-09T02:01:59.605Z [INFO] #25 1.997 Requirement already satisfied: pillow>=10.3.0 in /venv/lib/python3.11/site-packages (from -r requirements.txt (line 1)) (11.3.0)
+2025-11-09T02:01:59.738Z [INFO] #25 1.997 Requirement already satisfied: scipy in /venv/lib/python3.11/site-packages (from -r requirements.txt (line 2)) (1.16.3)
+2025-11-09T02:01:59.740Z [INFO] #25 2.130 Collecting color-matcher (from -r requirements.txt (line 3))
+2025-11-09T02:01:59.860Z [INFO] #25 2.253   Downloading color_matcher-0.6.0-py3-none-any.whl.metadata (1.3 kB)
+2025-11-09T02:02:00.037Z [INFO] #25 2.429 Collecting matplotlib (from -r requirements.txt (line 4))
+2025-11-09T02:02:00.165Z [INFO] #25 2.454   Downloading matplotlib-3.10.7-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (11 kB)
+2025-11-09T02:02:00.168Z [INFO] #25 2.460 Requirement already satisfied: huggingface_hub in /venv/lib/python3.11/site-packages (from -r requirements.txt (line 5)) (0.36.0)
+2025-11-09T02:02:00.169Z [INFO] #25 2.490 Collecting mss (from -r requirements.txt (line 6))
+2025-11-09T02:02:00.171Z [INFO] #25 2.515   Downloading mss-10.1.0-py3-none-any.whl.metadata (6.7 kB)
+2025-11-09T02:02:00.173Z [INFO] #25 2.521 Requirement already satisfied: opencv-python in /venv/lib/python3.11/site-packages (from -r requirements.txt (line 7)) (4.12.0.88)
+2025-11-09T02:02:00.174Z [INFO] #25 2.525 Requirement already satisfied: numpy<2.6,>=1.25.2 in /venv/lib/python3.11/site-packages (from scipy->-r requirements.txt (line 2)) (2.2.6)
+2025-11-09T02:02:00.175Z [INFO] #25 2.558 Collecting ddt (from color-matcher->-r requirements.txt (line 3))
+2025-11-09T02:02:00.320Z [INFO] #25 2.583   Downloading ddt-1.7.2-py2.py3-none-any.whl.metadata (832 bytes)
+2025-11-09T02:02:00.322Z [INFO] #25 2.616 Collecting docutils (from color-matcher->-r requirements.txt (line 3))
+2025-11-09T02:02:00.324Z [INFO] #25 2.643   Downloading docutils-0.22.3-py3-none-any.whl.metadata (15 kB)
+2025-11-09T02:02:00.325Z [INFO] #25 2.652 Requirement already satisfied: imageio in /venv/lib/python3.11/site-packages (from color-matcher->-r requirements.txt (line 3)) (2.37.2)
+2025-11-09T02:02:00.327Z [INFO] #25 2.652 Requirement already satisfied: packaging>=24.2 in /venv/lib/python3.11/site-packages (from color-matcher->-r requirements.txt (line 3)) (25.0)
+2025-11-09T02:02:00.328Z [INFO] #25 2.713 Collecting contourpy>=1.0.1 (from matplotlib->-r requirements.txt (line 4))
+2025-11-09T02:02:00.513Z [INFO] #25 2.737   Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+2025-11-09T02:02:00.515Z [INFO] #25 2.768 Collecting cycler>=0.10 (from matplotlib->-r requirements.txt (line 4))
+2025-11-09T02:02:00.517Z [INFO] #25 2.793   Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+2025-11-09T02:02:00.518Z [INFO] #25 2.905 Collecting fonttools>=4.22.0 (from matplotlib->-r requirements.txt (line 4))
+2025-11-09T02:02:00.645Z [INFO] #25 2.930   Downloading fonttools-4.60.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (112 kB)
+2025-11-09T02:02:00.647Z [INFO] #25 3.038 Collecting kiwisolver>=1.3.1 (from matplotlib->-r requirements.txt (line 4))
+2025-11-09T02:02:00.753Z [INFO] #25 3.063   Downloading kiwisolver-1.4.9-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.3 kB)
+2025-11-09T02:02:00.755Z [INFO] #25 3.102 Collecting pyparsing>=3 (from matplotlib->-r requirements.txt (line 4))
+2025-11-09T02:02:00.756Z [INFO] #25 3.126   Downloading pyparsing-3.2.5-py3-none-any.whl.metadata (5.0 kB)
+2025-11-09T02:02:00.757Z [INFO] #25 3.129 Requirement already satisfied: python-dateutil>=2.7 in /venv/lib/python3.11/site-packages (from matplotlib->-r requirements.txt (line 4)) (2.9.0.post0)
+2025-11-09T02:02:00.759Z [INFO] #25 3.130 Requirement already satisfied: filelock in /venv/lib/python3.11/site-packages (from huggingface_hub->-r requirements.txt (line 5)) (3.20.0)
+2025-11-09T02:02:00.760Z [INFO] #25 3.130 Requirement already satisfied: fsspec>=2023.5.0 in /venv/lib/python3.11/site-packages (from huggingface_hub->-r requirements.txt (line 5)) (2025.10.0)
+2025-11-09T02:02:00.761Z [INFO] #25 3.130 Requirement already satisfied: pyyaml>=5.1 in /venv/lib/python3.11/site-packages (from huggingface_hub->-r requirements.txt (line 5)) (6.0.3)
+2025-11-09T02:02:00.762Z [INFO] #25 3.131 Requirement already satisfied: requests in /venv/lib/python3.11/site-packages (from huggingface_hub->-r requirements.txt (line 5)) (2.32.5)
+2025-11-09T02:02:00.764Z [INFO] #25 3.131 Requirement already satisfied: tqdm>=4.42.1 in /venv/lib/python3.11/site-packages (from huggingface_hub->-r requirements.txt (line 5)) (4.67.1)
+2025-11-09T02:02:00.765Z [INFO] #25 3.131 Requirement already satisfied: typing-extensions>=3.7.4.3 in /venv/lib/python3.11/site-packages (from huggingface_hub->-r requirements.txt (line 5)) (4.15.0)
+2025-11-09T02:02:00.766Z [INFO] #25 3.132 Requirement already satisfied: hf-xet<2.0.0,>=1.1.3 in /venv/lib/python3.11/site-packages (from huggingface_hub->-r requirements.txt (line 5)) (1.2.0)
+2025-11-09T02:02:00.767Z [INFO] #25 3.146 Requirement already satisfied: six>=1.5 in /venv/lib/python3.11/site-packages (from python-dateutil>=2.7->matplotlib->-r requirements.txt (line 4)) (1.17.0)
+2025-11-09T02:02:00.875Z [INFO] #25 3.153 Requirement already satisfied: charset_normalizer<4,>=2 in /venv/lib/python3.11/site-packages (from requests->huggingface_hub->-r requirements.txt (line 5)) (3.4.4)
+2025-11-09T02:02:00.877Z [INFO] #25 3.153 Requirement already satisfied: idna<4,>=2.5 in /venv/lib/python3.11/site-packages (from requests->huggingface_hub->-r requirements.txt (line 5)) (3.11)
+2025-11-09T02:02:00.878Z [INFO] #25 3.153 Requirement already satisfied: urllib3<3,>=1.21.1 in /venv/lib/python3.11/site-packages (from requests->huggingface_hub->-r requirements.txt (line 5)) (2.5.0)
+2025-11-09T02:02:00.880Z [INFO] #25 3.153 Requirement already satisfied: certifi>=2017.4.17 in /venv/lib/python3.11/site-packages (from requests->huggingface_hub->-r requirements.txt (line 5)) (2025.10.5)
+2025-11-09T02:02:00.881Z [INFO] #25 3.182 Downloading color_matcher-0.6.0-py3-none-any.whl (1.8 MB)
+2025-11-09T02:02:00.996Z [INFO] #25 3.268    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 27.9 MB/s  0:00:00
+2025-11-09T02:02:00.998Z [INFO] #25 3.292 Downloading matplotlib-3.10.7-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (8.7 MB)
+2025-11-09T02:02:01.000Z [INFO] #25 3.364    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.7/8.7 MB 122.7 MB/s  0:00:00
+2025-11-09T02:02:01.002Z [INFO] #25 3.389 Downloading mss-10.1.0-py3-none-any.whl (24 kB)
+2025-11-09T02:02:01.227Z [INFO] #25 3.414 Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (355 kB)
+2025-11-09T02:02:01.229Z [INFO] #25 3.443 Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+2025-11-09T02:02:01.230Z [INFO] #25 3.468 Downloading fonttools-4.60.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.0 MB)
+2025-11-09T02:02:01.390Z [INFO] #25 3.782    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.0/5.0 MB 15.2 MB/s  0:00:00
+2025-11-09T02:02:01.510Z [INFO] #25 3.812 Downloading kiwisolver-1.4.9-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.4 MB)
+2025-11-09T02:02:01.513Z [INFO] #25 3.819    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 229.7 MB/s  0:00:00
+2025-11-09T02:02:01.514Z [INFO] #25 3.849 Downloading pyparsing-3.2.5-py3-none-any.whl (113 kB)
+2025-11-09T02:02:01.516Z [INFO] #25 3.875 Downloading ddt-1.7.2-py2.py3-none-any.whl (7.1 kB)
+2025-11-09T02:02:01.517Z [INFO] #25 3.903 Downloading docutils-0.22.3-py3-none-any.whl (633 kB)
+2025-11-09T02:02:01.666Z [INFO] #25 3.907    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 633.0/633.0 kB 135.4 MB/s  0:00:00
+2025-11-09T02:02:01.691Z [INFO] #25 4.083 Installing collected packages: ddt, pyparsing, mss, kiwisolver, fonttools, docutils, cycler, contourpy, matplotlib, color-matcher
+2025-11-09T02:02:03.488Z [INFO] #25 5.880
+2025-11-09T02:02:03.643Z [INFO] #25 5.885 Successfully installed color-matcher-0.6.0 contourpy-1.3.3 cycler-0.12.1 ddt-1.7.2 docutils-0.22.3 fonttools-4.60.1 kiwisolver-1.4.9 matplotlib-3.10.7 mss-10.1.0 pyparsing-3.2.5
+2025-11-09T02:02:03.690Z [INFO] #25 DONE 6.1s
+2025-11-09T02:02:03.840Z [INFO] 
+2025-11-09T02:02:03.842Z [INFO] #26 [19/25] RUN /venv/bin/python -m pip install     transformers     soundfile     librosa     einops     safetensors     demucs     accelerate
+2025-11-09T02:02:04.160Z [INFO] #26 0.470 Requirement already satisfied: transformers in /venv/lib/python3.11/site-packages (4.57.1)
+2025-11-09T02:02:04.275Z [INFO] #26 0.470 Requirement already satisfied: soundfile in /venv/lib/python3.11/site-packages (0.13.1)
+2025-11-09T02:02:04.277Z [INFO] #26 0.470 Requirement already satisfied: librosa in /venv/lib/python3.11/site-packages (0.10.2)
+2025-11-09T02:02:04.279Z [INFO] #26 0.470 Requirement already satisfied: einops in /venv/lib/python3.11/site-packages (0.8.1)
+2025-11-09T02:02:04.280Z [INFO] #26 0.470 Requirement already satisfied: safetensors in /venv/lib/python3.11/site-packages (0.6.2)
+2025-11-09T02:02:04.282Z [INFO] #26 0.585 Collecting demucs
+2025-11-09T02:02:04.403Z [INFO] #26 0.713   Downloading demucs-4.0.1.tar.gz (1.2 MB)
+2025-11-09T02:02:04.719Z [INFO] #26 0.847      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 17.5 MB/s  0:00:00
+2025-11-09T02:02:04.721Z [INFO] #26 0.878   Installing build dependencies: started
+2025-11-09T02:02:05.583Z [INFO] #26 1.893   Installing build dependencies: finished with status 'done'
+2025-11-09T02:02:05.734Z [INFO] #26 1.894   Getting requirements to build wheel: started
+2025-11-09T02:02:05.822Z [INFO] #26 2.132   Getting requirements to build wheel: finished with status 'done'
+2025-11-09T02:02:05.955Z [INFO] #26 2.134   Preparing metadata (pyproject.toml): started
+2025-11-09T02:02:05.956Z [INFO] #26 2.265   Preparing metadata (pyproject.toml): finished with status 'done'
+2025-11-09T02:02:06.119Z [INFO] #26 2.268 Requirement already satisfied: accelerate in /venv/lib/python3.11/site-packages (1.11.0)
+2025-11-09T02:02:06.120Z [INFO] #26 2.270 Requirement already satisfied: filelock in /venv/lib/python3.11/site-packages (from transformers) (3.20.0)
+2025-11-09T02:02:06.121Z [INFO] #26 2.270 Requirement already satisfied: huggingface-hub<1.0,>=0.34.0 in /venv/lib/python3.11/site-packages (from transformers) (0.36.0)
+2025-11-09T02:02:06.122Z [INFO] #26 2.271 Requirement already satisfied: numpy>=1.17 in /venv/lib/python3.11/site-packages (from transformers) (2.2.6)
+2025-11-09T02:02:06.122Z [INFO] #26 2.271 Requirement already satisfied: packaging>=20.0 in /venv/lib/python3.11/site-packages (from transformers) (25.0)
+2025-11-09T02:02:06.123Z [INFO] #26 2.271 Requirement already satisfied: pyyaml>=5.1 in /venv/lib/python3.11/site-packages (from transformers) (6.0.3)
+2025-11-09T02:02:06.124Z [INFO] #26 2.271 Requirement already satisfied: regex!=2019.12.17 in /venv/lib/python3.11/site-packages (from transformers) (2025.11.3)
+2025-11-09T02:02:06.124Z [INFO] #26 2.271 Requirement already satisfied: requests in /venv/lib/python3.11/site-packages (from transformers) (2.32.5)
+2025-11-09T02:02:06.125Z [INFO] #26 2.272 Requirement already satisfied: tokenizers<=0.23.0,>=0.22.0 in /venv/lib/python3.11/site-packages (from transformers) (0.22.1)
+2025-11-09T02:02:06.125Z [INFO] #26 2.272 Requirement already satisfied: tqdm>=4.27 in /venv/lib/python3.11/site-packages (from transformers) (4.67.1)
+2025-11-09T02:02:06.126Z [INFO] #26 2.290 Requirement already satisfied: fsspec>=2023.5.0 in /venv/lib/python3.11/site-packages (from huggingface-hub<1.0,>=0.34.0->transformers) (2025.10.0)
+2025-11-09T02:02:06.127Z [INFO] #26 2.291 Requirement already satisfied: typing-extensions>=3.7.4.3 in /venv/lib/python3.11/site-packages (from huggingface-hub<1.0,>=0.34.0->transformers) (4.15.0)
+2025-11-09T02:02:06.127Z [INFO] #26 2.299 Requirement already satisfied: hf-xet<2.0.0,>=1.1.3 in /venv/lib/python3.11/site-packages (from huggingface-hub<1.0,>=0.34.0->transformers) (1.2.0)
+2025-11-09T02:02:06.128Z [INFO] #26 2.305 Requirement already satisfied: cffi>=1.0 in /venv/lib/python3.11/site-packages (from soundfile) (2.0.0)
+2025-11-09T02:02:06.128Z [INFO] #26 2.306 Requirement already satisfied: audioread>=2.1.9 in /venv/lib/python3.11/site-packages (from librosa) (3.1.0)
+2025-11-09T02:02:06.129Z [INFO] #26 2.307 Requirement already satisfied: scipy>=1.2.0 in /venv/lib/python3.11/site-packages (from librosa) (1.16.3)
+2025-11-09T02:02:06.130Z [INFO] #26 2.307 Requirement already satisfied: scikit-learn>=0.20.0 in /venv/lib/python3.11/site-packages (from librosa) (1.7.2)
+2025-11-09T02:02:06.130Z [INFO] #26 2.307 Requirement already satisfied: joblib>=0.14 in /venv/lib/python3.11/site-packages (from librosa) (1.5.2)
+2025-11-09T02:02:06.131Z [INFO] #26 2.307 Requirement already satisfied: decorator>=4.3.0 in /venv/lib/python3.11/site-packages (from librosa) (5.2.1)
+2025-11-09T02:02:06.132Z [INFO] #26 2.308 Requirement already satisfied: numba>=0.51.0 in /venv/lib/python3.11/site-packages (from librosa) (0.62.1)
+2025-11-09T02:02:06.132Z [INFO] #26 2.308 Requirement already satisfied: pooch>=1.1 in /venv/lib/python3.11/site-packages (from librosa) (1.8.2)
+2025-11-09T02:02:06.133Z [INFO] #26 2.308 Requirement already satisfied: soxr>=0.3.2 in /venv/lib/python3.11/site-packages (from librosa) (1.0.0)
+2025-11-09T02:02:06.133Z [INFO] #26 2.309 Requirement already satisfied: lazy-loader>=0.1 in /venv/lib/python3.11/site-packages (from librosa) (0.4)
+2025-11-09T02:02:06.134Z [INFO] #26 2.309 Requirement already satisfied: msgpack>=1.0 in /venv/lib/python3.11/site-packages (from librosa) (1.1.2)
+2025-11-09T02:02:06.135Z [INFO] #26 2.429 Collecting dora-search (from demucs)
+2025-11-09T02:02:06.317Z [INFO] #26 2.456   Downloading dora_search-0.1.12.tar.gz (87 kB)
+2025-11-09T02:02:06.320Z [INFO] #26 2.477   Installing build dependencies: started
+2025-11-09T02:02:06.876Z [INFO] #26 3.186   Installing build dependencies: finished with status 'done'
+2025-11-09T02:02:07.027Z [INFO] #26 3.187   Getting requirements to build wheel: started
+2025-11-09T02:02:07.098Z [INFO] #26 3.408   Getting requirements to build wheel: finished with status 'done'
+2025-11-09T02:02:07.227Z [INFO] #26 3.409   Preparing metadata (pyproject.toml): started
+2025-11-09T02:02:07.229Z [INFO] #26 3.537   Preparing metadata (pyproject.toml): finished with status 'done'
+2025-11-09T02:02:07.469Z [INFO] #26 3.569 Collecting julius>=0.2.3 (from demucs)
+2025-11-09T02:02:07.471Z [INFO] #26 3.598   Downloading julius-0.2.7.tar.gz (59 kB)
+2025-11-09T02:02:07.473Z [INFO] #26 3.628   Installing build dependencies: started
+2025-11-09T02:02:08.030Z [INFO] #26 4.340   Installing build dependencies: finished with status 'done'
+2025-11-09T02:02:08.181Z [INFO] #26 4.341   Getting requirements to build wheel: started
+2025-11-09T02:02:08.247Z [INFO] #26 4.556   Getting requirements to build wheel: finished with status 'done'
+2025-11-09T02:02:08.373Z [INFO] #26 4.558   Preparing metadata (pyproject.toml): started
+2025-11-09T02:02:08.375Z [INFO] #26 4.682   Preparing metadata (pyproject.toml): finished with status 'done'
+2025-11-09T02:02:08.583Z [INFO] #26 4.893 Collecting lameenc>=1.2 (from demucs)
+2025-11-09T02:02:08.725Z [INFO] #26 4.920   Downloading lameenc-1.8.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl.metadata (9.9 kB)
+2025-11-09T02:02:08.727Z [INFO] #26 5.036 Collecting openunmix (from demucs)
+2025-11-09T02:02:08.860Z [INFO] #26 5.062   Downloading openunmix-1.3.0-py3-none-any.whl.metadata (17 kB)
+2025-11-09T02:02:08.876Z [INFO] #26 5.066 Requirement already satisfied: torch>=1.8.1 in /venv/lib/python3.11/site-packages (from demucs) (2.9.0)
+2025-11-09T02:02:08.877Z [INFO] #26 5.066 Requirement already satisfied: torchaudio>=0.8 in /venv/lib/python3.11/site-packages (from demucs) (2.9.0)
+2025-11-09T02:02:08.878Z [INFO] #26 5.068 Requirement already satisfied: psutil in /venv/lib/python3.11/site-packages (from accelerate) (7.1.3)
+2025-11-09T02:02:08.878Z [INFO] #26 5.072 Requirement already satisfied: pycparser in /venv/lib/python3.11/site-packages (from cffi>=1.0->soundfile) (2.23)
+2025-11-09T02:02:08.879Z [INFO] #26 5.080 Requirement already satisfied: llvmlite<0.46,>=0.45.0dev0 in /venv/lib/python3.11/site-packages (from numba>=0.51.0->librosa) (0.45.1)
+2025-11-09T02:02:08.879Z [INFO] #26 5.084 Requirement already satisfied: platformdirs>=2.5.0 in /venv/lib/python3.11/site-packages (from pooch>=1.1->librosa) (4.5.0)
+2025-11-09T02:02:08.880Z [INFO] #26 5.088 Requirement already satisfied: charset_normalizer<4,>=2 in /venv/lib/python3.11/site-packages (from requests->transformers) (3.4.4)
+2025-11-09T02:02:08.883Z [INFO] #26 5.088 Requirement already satisfied: idna<4,>=2.5 in /venv/lib/python3.11/site-packages (from requests->transformers) (3.11)
+2025-11-09T02:02:08.884Z [INFO] #26 5.089 Requirement already satisfied: urllib3<3,>=1.21.1 in /venv/lib/python3.11/site-packages (from requests->transformers) (2.5.0)
+2025-11-09T02:02:08.885Z [INFO] #26 5.089 Requirement already satisfied: certifi>=2017.4.17 in /venv/lib/python3.11/site-packages (from requests->transformers) (2025.10.5)
+2025-11-09T02:02:08.885Z [INFO] #26 5.094 Requirement already satisfied: threadpoolctl>=3.1.0 in /venv/lib/python3.11/site-packages (from scikit-learn>=0.20.0->librosa) (3.6.0)
+2025-11-09T02:02:08.886Z [INFO] #26 5.104 Requirement already satisfied: sympy>=1.13.3 in /venv/lib/python3.11/site-packages (from torch>=1.8.1->demucs) (1.14.0)
+2025-11-09T02:02:08.887Z [INFO] #26 5.104 Requirement already satisfied: networkx>=2.5.1 in /venv/lib/python3.11/site-packages (from torch>=1.8.1->demucs) (3.5)
+2025-11-09T02:02:08.887Z [INFO] #26 5.104 Requirement already satisfied: jinja2 in /venv/lib/python3.11/site-packages (from torch>=1.8.1->demucs) (3.1.6)
+2025-11-09T02:02:08.888Z [INFO] #26 5.105 Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.8.93 in /venv/lib/python3.11/site-packages (from torch>=1.8.1->demucs) (12.8.93)
+2025-11-09T02:02:08.889Z [INFO] #26 5.105 Requirement already satisfied: nvidia-cuda-runtime-cu12==12.8.90 in /venv/lib/python3.11/site-packages (from torch>=1.8.1->demucs) (12.8.90)
+2025-11-09T02:02:08.889Z [INFO] #26 5.106 Requirement already satisfied: nvidia-cuda-cupti-cu12==12.8.90 in /venv/lib/python3.11/site-packages (from torch>=1.8.1->demucs) (12.8.90)
+2025-11-09T02:02:08.890Z [INFO] #26 5.106 Requirement already satisfied: nvidia-cudnn-cu12==9.10.2.21 in /venv/lib/python3.11/site-packages (from torch>=1.8.1->demucs) (9.10.2.21)
+2025-11-09T02:02:08.890Z [INFO] #26 5.106 Requirement already satisfied: nvidia-cublas-cu12==12.8.4.1 in /venv/lib/python3.11/site-packages (from torch>=1.8.1->demucs) (12.8.4.1)
+2025-11-09T02:02:08.891Z [INFO] #26 5.107 Requirement already satisfied: nvidia-cufft-cu12==11.3.3.83 in /venv/lib/python3.11/site-packages (from torch>=1.8.1->demucs) (11.3.3.83)
+2025-11-09T02:02:08.891Z [INFO] #26 5.107 Requirement already satisfied: nvidia-curand-cu12==10.3.9.90 in /venv/lib/python3.11/site-packages (from torch>=1.8.1->demucs) (10.3.9.90)
+2025-11-09T02:02:08.892Z [INFO] #26 5.107 Requirement already satisfied: nvidia-cusolver-cu12==11.7.3.90 in /venv/lib/python3.11/site-packages (from torch>=1.8.1->demucs) (11.7.3.90)
+2025-11-09T02:02:08.893Z [INFO] #26 5.108 Requirement already satisfied: nvidia-cusparse-cu12==12.5.8.93 in /venv/lib/python3.11/site-packages (from torch>=1.8.1->demucs) (12.5.8.93)
+2025-11-09T02:02:08.893Z [INFO] #26 5.108 Requirement already satisfied: nvidia-cusparselt-cu12==0.7.1 in /venv/lib/python3.11/site-packages (from torch>=1.8.1->demucs) (0.7.1)
+2025-11-09T02:02:08.894Z [INFO] #26 5.109 Requirement already satisfied: nvidia-nccl-cu12==2.27.5 in /venv/lib/python3.11/site-packages (from torch>=1.8.1->demucs) (2.27.5)
+2025-11-09T02:02:08.894Z [INFO] #26 5.109 Requirement already satisfied: nvidia-nvshmem-cu12==3.3.20 in /venv/lib/python3.11/site-packages (from torch>=1.8.1->demucs) (3.3.20)
+2025-11-09T02:02:08.895Z [INFO] #26 5.109 Requirement already satisfied: nvidia-nvtx-cu12==12.8.90 in /venv/lib/python3.11/site-packages (from torch>=1.8.1->demucs) (12.8.90)
+2025-11-09T02:02:08.896Z [INFO] #26 5.110 Requirement already satisfied: nvidia-nvjitlink-cu12==12.8.93 in /venv/lib/python3.11/site-packages (from torch>=1.8.1->demucs) (12.8.93)
+2025-11-09T02:02:08.896Z [INFO] #26 5.110 Requirement already satisfied: nvidia-cufile-cu12==1.13.1.3 in /venv/lib/python3.11/site-packages (from torch>=1.8.1->demucs) (1.13.1.3)
+2025-11-09T02:02:08.897Z [INFO] #26 5.110 Requirement already satisfied: triton==3.5.0 in /venv/lib/python3.11/site-packages (from torch>=1.8.1->demucs) (3.5.0)
+2025-11-09T02:02:08.898Z [INFO] #26 5.127 Requirement already satisfied: mpmath<1.4,>=1.1.0 in /venv/lib/python3.11/site-packages (from sympy>=1.13.3->torch>=1.8.1->demucs) (1.3.0)
+2025-11-09T02:02:08.898Z [INFO] #26 5.170 Collecting omegaconf (from dora-search->demucs)
+2025-11-09T02:02:09.062Z [INFO] #26 5.196   Downloading omegaconf-2.3.0-py3-none-any.whl.metadata (3.9 kB)
+2025-11-09T02:02:09.064Z [INFO] #26 5.222 Collecting retrying (from dora-search->demucs)
+2025-11-09T02:02:09.065Z [INFO] #26 5.249   Downloading retrying-1.4.2-py3-none-any.whl.metadata (5.5 kB)
+2025-11-09T02:02:09.067Z [INFO] #26 5.372 Collecting submitit (from dora-search->demucs)
+2025-11-09T02:02:09.217Z [INFO] #26 5.401   Downloading submitit-1.5.3-py3-none-any.whl.metadata (7.9 kB)
+2025-11-09T02:02:09.218Z [INFO] #26 5.527 Collecting treetable (from dora-search->demucs)
+2025-11-09T02:02:09.318Z [INFO] #26 5.555   Downloading treetable-0.2.6-py3-none-any.whl.metadata (5.3 kB)
+2025-11-09T02:02:09.319Z [INFO] #26 5.565 Requirement already satisfied: MarkupSafe>=2.0 in /venv/lib/python3.11/site-packages (from jinja2->torch>=1.8.1->demucs) (3.0.3)
+2025-11-09T02:02:09.321Z [INFO] #26 5.599 Collecting antlr4-python3-runtime==4.9.* (from omegaconf->dora-search->demucs)
+2025-11-09T02:02:09.322Z [INFO] #26 5.628   Downloading antlr4-python3-runtime-4.9.3.tar.gz (117 kB)
+2025-11-09T02:02:09.512Z [INFO] #26 5.671   Installing build dependencies: started
+2025-11-09T02:02:10.065Z [INFO] #26 6.374   Installing build dependencies: finished with status 'done'
+2025-11-09T02:02:10.216Z [INFO] #26 6.375   Getting requirements to build wheel: started
+2025-11-09T02:02:10.280Z [INFO] #26 6.590   Getting requirements to build wheel: finished with status 'done'
+2025-11-09T02:02:10.403Z [INFO] #26 6.592   Preparing metadata (pyproject.toml): started
+2025-11-09T02:02:10.405Z [INFO] #26 6.713   Preparing metadata (pyproject.toml): finished with status 'done'
+2025-11-09T02:02:10.532Z [INFO] #26 6.770 Collecting cloudpickle>=1.2.1 (from submitit->dora-search->demucs)
+2025-11-09T02:02:10.534Z [INFO] #26 6.798   Downloading cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+2025-11-09T02:02:10.536Z [INFO] #26 6.841 Downloading lameenc-1.8.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl (249 kB)
+2025-11-09T02:02:10.649Z [INFO] #26 6.874 Downloading omegaconf-2.3.0-py3-none-any.whl (79 kB)
+2025-11-09T02:02:10.651Z [INFO] #26 6.903 Downloading openunmix-1.3.0-py3-none-any.whl (40 kB)
+2025-11-09T02:02:10.653Z [INFO] #26 6.931 Downloading retrying-1.4.2-py3-none-any.whl (10 kB)
+2025-11-09T02:02:10.655Z [INFO] #26 6.959 Downloading submitit-1.5.3-py3-none-any.whl (75 kB)
+2025-11-09T02:02:10.863Z [INFO] #26 6.987 Downloading cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+2025-11-09T02:02:10.865Z [INFO] #26 7.015 Downloading treetable-0.2.6-py3-none-any.whl (7.4 kB)
+2025-11-09T02:02:10.867Z [INFO] #26 7.022 Building wheels for collected packages: demucs, julius, dora-search, antlr4-python3-runtime
+2025-11-09T02:02:10.868Z [INFO] #26 7.022   Building wheel for demucs (pyproject.toml): started
+2025-11-09T02:02:10.883Z [INFO] #26 7.194   Building wheel for demucs (pyproject.toml): finished with status 'done'
+2025-11-09T02:02:11.037Z [INFO] #26 7.194   Created wheel for demucs: filename=demucs-4.0.1-py3-none-any.whl size=78480 sha256=31ca3893ab4db50627dc1fdda43d73bc3f05a38f814c553e3078a88145a3cdc8
+2025-11-09T02:02:11.039Z [INFO] #26 7.195   Stored in directory: /root/.cache/pip/wheels/bb/06/a3/83489d50c9f015fa981a2a7bb08fcede75120a0de56775353f
+2025-11-09T02:02:11.040Z [INFO] #26 7.200   Building wheel for julius (pyproject.toml): started
+2025-11-09T02:02:11.042Z [INFO] #26 7.347   Building wheel for julius (pyproject.toml): finished with status 'done'
+2025-11-09T02:02:11.192Z [INFO] #26 7.347   Created wheel for julius: filename=julius-0.2.7-py3-none-any.whl size=21966 sha256=a2a8936efeeacde3bc82b57dc21b0818feb7eb27055169851fa5bf328f19f5e8
+2025-11-09T02:02:11.194Z [INFO] #26 7.348   Stored in directory: /root/.cache/pip/wheels/16/15/d4/edd724cefe78050a6ba3344b8b0c6672db829a799dbb9f81ff
+2025-11-09T02:02:11.195Z [INFO] #26 7.352   Building wheel for dora-search (pyproject.toml): started
+2025-11-09T02:02:11.213Z [INFO] #26 7.523   Building wheel for dora-search (pyproject.toml): finished with status 'done'
+2025-11-09T02:02:11.370Z [INFO] #26 7.524   Created wheel for dora-search: filename=dora_search-0.1.12-py3-none-any.whl size=75195 sha256=283ed76f5e9fd1a06cc986eaa1bfbf5674bb9c4c99415a88c8b30022588bed81
+2025-11-09T02:02:11.372Z [INFO] #26 7.524   Stored in directory: /root/.cache/pip/wheels/e3/f3/a9/2fd1ebbd64c4b2a1e53c81bf25282567a80802ceedfedcab4a
+2025-11-09T02:02:11.374Z [INFO] #26 7.530   Building wheel for antlr4-python3-runtime (pyproject.toml): started
+2025-11-09T02:02:11.397Z [INFO] #26 7.708   Building wheel for antlr4-python3-runtime (pyproject.toml): finished with status 'done'
+2025-11-09T02:02:11.532Z [INFO] #26 7.708   Created wheel for antlr4-python3-runtime: filename=antlr4_python3_runtime-4.9.3-py3-none-any.whl size=144591 sha256=8e01125ebb73e60c872d69e99fdadaf4914a6dfce5ffe9d0ca8539e9108dbce3
+2025-11-09T02:02:11.534Z [INFO] #26 7.709   Stored in directory: /root/.cache/pip/wheels/1a/97/32/461f837398029ad76911109f07047fde1d7b661a147c7c56d1
+2025-11-09T02:02:11.535Z [INFO] #26 7.711 Successfully built demucs julius dora-search antlr4-python3-runtime
+2025-11-09T02:02:11.536Z [INFO] #26 7.842 Installing collected packages: lameenc, antlr4-python3-runtime, treetable, retrying, omegaconf, cloudpickle, submitit, julius, dora-search, openunmix, demucs
+2025-11-09T02:02:11.775Z [INFO] #26 8.085
+2025-11-09T02:02:11.931Z [INFO] #26 8.091 Successfully installed antlr4-python3-runtime-4.9.3 cloudpickle-3.1.2 demucs-4.0.1 dora-search-0.1.12 julius-0.2.7 lameenc-1.8.1 omegaconf-2.3.0 openunmix-1.3.0 retrying-1.4.2 submitit-1.5.3 treetable-0.2.6
+2025-11-09T02:02:12.025Z [INFO] #26 DONE 8.3s
+2025-11-09T02:02:12.175Z [INFO] 
+2025-11-09T02:02:12.178Z [INFO] #27 [20/25] RUN /venv/bin/python -m pip install wheel setuptools
+2025-11-09T02:02:12.631Z [INFO] #27 0.606 Collecting wheel
+2025-11-09T02:02:12.796Z [INFO] #27 0.607   Using cached wheel-0.45.1-py3-none-any.whl.metadata (2.3 kB)
+2025-11-09T02:02:12.798Z [INFO] #27 0.608 Requirement already satisfied: setuptools in /venv/lib/python3.11/site-packages (65.5.0)
+2025-11-09T02:02:12.801Z [INFO] #27 0.612 Using cached wheel-0.45.1-py3-none-any.whl (72 kB)
+2025-11-09T02:02:12.806Z [INFO] #27 0.779 Installing collected packages: wheel
+2025-11-09T02:02:13.053Z [INFO] #27 0.817 Successfully installed wheel-0.45.1
+2025-11-09T02:02:13.055Z [INFO] #27 DONE 0.9s
+2025-11-09T02:02:13.056Z [INFO] 
+2025-11-09T02:02:13.057Z [INFO] #28 [21/25] RUN /venv/bin/python -m pip install sageattention --no-build-isolation
+2025-11-09T02:02:13.458Z [INFO] #28 0.556 Collecting sageattention
+2025-11-09T02:02:13.570Z [INFO] #28 0.667   Downloading sageattention-2.2.0.tar.gz (67 kB)
+2025-11-09T02:02:13.763Z [INFO] #28 0.709   Preparing metadata (pyproject.toml): started
+2025-11-09T02:02:15.618Z [INFO] #28 2.715   Preparing metadata (pyproject.toml): finished with status 'done'
+2025-11-09T02:02:15.773Z [INFO] #28 2.718 Building wheels for collected packages: sageattention
+2025-11-09T02:02:15.775Z [INFO] #28 2.720   Building wheel for sageattention (pyproject.toml): started
+2025-11-09T02:03:17.475Z [INFO] #28 64.57   Building wheel for sageattention (pyproject.toml): still running...
+2025-11-09T02:04:16.786Z [INFO] #28 123.9   Building wheel for sageattention (pyproject.toml): finished with status 'done'
+2025-11-09T02:04:16.950Z [INFO] #28 123.9   Created wheel for sageattention: filename=sageattention-2.2.0-cp311-cp311-linux_x86_64.whl size=15456702 sha256=0144b5330cefa1fb0a02cd766d212eb2fdb96e80fb076f77e50bd0911748ac04
+2025-11-09T02:04:16.952Z [INFO] #28 123.9   Stored in directory: /root/.cache/pip/wheels/1a/fb/af/3263224bb66c391f0af640d721a77dc4d10a20898e4bb93cbc
+2025-11-09T02:04:16.954Z [INFO] #28 123.9 Successfully built sageattention
+2025-11-09T02:04:16.967Z [INFO] #28 124.1 Installing collected packages: sageattention
+2025-11-09T02:04:17.183Z [INFO] #28 124.3 Successfully installed sageattention-2.2.0
+2025-11-09T02:04:17.309Z [INFO] #28 DONE 124.4s
+2025-11-09T02:04:17.526Z [INFO] 
+2025-11-09T02:04:17.528Z [INFO] #29 [22/25] COPY src/start.sh /root/start.sh
+2025-11-09T02:04:17.530Z [INFO] #29 DONE 0.0s
+2025-11-09T02:04:17.531Z [INFO] 
+2025-11-09T02:04:17.533Z [INFO] #30 [23/25] COPY src/rp_handler.py /root/rp_handler.py
+2025-11-09T02:04:17.535Z [INFO] #30 DONE 0.0s
+2025-11-09T02:04:17.536Z [INFO] 
+2025-11-09T02:04:17.538Z [INFO] #31 [24/25] COPY src/ComfyUI_API_Wrapper.py /root/ComfyUI_API_Wrapper.py
+2025-11-09T02:04:17.539Z [INFO] #31 DONE 0.0s
+2025-11-09T02:04:17.541Z [INFO] 
+2025-11-09T02:04:17.542Z [INFO] #32 [25/25] RUN chmod +x /root/start.sh
+2025-11-09T02:04:17.600Z [INFO] #32 DONE 0.2s
+2025-11-09T02:04:17.753Z [INFO] 
+2025-11-09T02:04:17.754Z [INFO] #33 exporting to oci image format. This takes a little bit of time. Please be patient.
+2025-11-09T02:04:17.755Z [INFO] #33 exporting layers
+2025-11-09T02:08:35.622Z [INFO] #33 exporting layers 258.0s done
+2025-11-09T02:08:35.778Z [INFO] #33 exporting manifest sha256:02f7d751e601e7ec4f8c9beff202d47f0cde370521d039045562e6a070883d9f done
+2025-11-09T02:08:35.780Z [INFO] #33 exporting config sha256:c98c27008f4d61587c1cc52353c6072665c6ced52a3ff2d39f014bcb2ff3e42d done
+2025-11-09T02:08:35.780Z [INFO] #33 sending tarball
+2025-11-09T02:10:08.736Z [INFO] #33 sending tarball 93.1s done
+2025-11-09T02:10:08.737Z [INFO] #33 DONE 351.1s
+2025-11-09T02:10:08.886Z [INFO] 
+2025-11-09T02:10:08.888Z [INFO] #34 exporting cache to client directory
+2025-11-09T02:10:08.890Z [INFO] #34 preparing build cache for export
+2025-11-09T02:10:08.937Z [INFO] #34 writing layer sha256:0264850675f7464ed6385d030d281ffb0f2037323c73511a5372948c1c69d92c
+2025-11-09T02:10:26.239Z [INFO] #34 writing layer sha256:0264850675f7464ed6385d030d281ffb0f2037323c73511a5372948c1c69d92c 17.3s done
+2025-11-09T02:10:26.246Z [INFO] #34 writing layer sha256:030ef82509363afebdc78482e6f8c07f2bc8b65a45caf082c2a9a621c7deae63
+2025-11-09T02:10:26.858Z [INFO] #34 writing layer sha256:030ef82509363afebdc78482e6f8c07f2bc8b65a45caf082c2a9a621c7deae63 0.6s done
+2025-11-09T02:10:26.861Z [INFO] #34 writing layer sha256:09b375045dc4f88ccdc1e1750f944e4cc3b89e0b989c44e64dd7e3b748af026c
+2025-11-09T02:11:13.473Z [INFO] #34 writing layer sha256:09b375045dc4f88ccdc1e1750f944e4cc3b89e0b989c44e64dd7e3b748af026c 46.6s done
+2025-11-09T02:11:13.475Z [INFO] #34 writing layer sha256:0e85aeaff13c8cc1f04327f2208dc6bb4426052b8cd31aecab9dff98b1578fd5
+2025-11-09T02:11:13.618Z [INFO] #34 writing layer sha256:0e85aeaff13c8cc1f04327f2208dc6bb4426052b8cd31aecab9dff98b1578fd5 0.1s done
+2025-11-09T02:11:13.620Z [INFO] #34 writing layer sha256:1c3b0b533b5bbccb1ff37c26c8c29f8f119622b4755262ad664304aeca066ee1 0.1s done
+2025-11-09T02:11:13.622Z [INFO] #34 writing layer sha256:219a9c4ec6acfd74743d2c3971553782a66763545320ffe8e425dcb9732a6dbf
+2025-11-09T02:11:13.739Z [INFO] #34 writing layer sha256:219a9c4ec6acfd74743d2c3971553782a66763545320ffe8e425dcb9732a6dbf 0.1s done
+2025-11-09T02:11:13.741Z [INFO] #34 writing layer sha256:26e24cdaed2b88301e5db3db1a2d0c764acb43588092415d20ac9f1f4856ffdc 0.1s done
+2025-11-09T02:11:13.743Z [INFO] #34 writing layer sha256:30403df4b5d7bb4b2ce6345a7c44b4be41b3645833742dd3b913f9dd2e7b4cd9
+2025-11-09T02:11:13.881Z [INFO] #34 writing layer sha256:30403df4b5d7bb4b2ce6345a7c44b4be41b3645833742dd3b913f9dd2e7b4cd9 0.1s done
+2025-11-09T02:11:13.883Z [INFO] #34 writing layer sha256:3c0007433621f7da760c878fca37aed1e2c7ef8fb84928e23e0982d671615b54 0.1s done
+2025-11-09T02:11:13.885Z [INFO] #34 writing layer sha256:3da7103df79e2a1ca9ce6b481c3a7e3c3b7ddcb7ef266519c795e3c3236f7c2d
+2025-11-09T02:11:14.019Z [INFO] #34 writing layer sha256:3da7103df79e2a1ca9ce6b481c3a7e3c3b7ddcb7ef266519c795e3c3236f7c2d 0.1s done
+2025-11-09T02:11:14.021Z [INFO] #34 writing layer sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1
+2025-11-09T02:11:14.172Z [INFO] #34 writing layer sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1 done
+2025-11-09T02:11:14.174Z [INFO] #34 writing layer sha256:52dd6a898340b4b41b91cc54d6a730a65b7afdae76d751d2bc7975d7396288e1
+2025-11-09T02:11:15.218Z [INFO] #34 writing layer sha256:52dd6a898340b4b41b91cc54d6a730a65b7afdae76d751d2bc7975d7396288e1 1.2s done
+2025-11-09T02:11:15.221Z [INFO] #34 writing layer sha256:533f0de49c8a3a728e6238d4eaba2851ef125f1955d170727dbdef1d7c46b3bf
+2025-11-09T02:11:15.331Z [INFO] #34 writing layer sha256:533f0de49c8a3a728e6238d4eaba2851ef125f1955d170727dbdef1d7c46b3bf 0.1s done
+2025-11-09T02:11:15.333Z [INFO] #34 writing layer sha256:5601308b3ac642f7df8b1dc62b9582abdd34857eec6190bcb50162abc5719226
+2025-11-09T02:11:15.538Z [INFO] #34 writing layer sha256:5601308b3ac642f7df8b1dc62b9582abdd34857eec6190bcb50162abc5719226 0.1s done
+2025-11-09T02:11:15.540Z [INFO] #34 writing layer sha256:67b13ba9b56613e692b342ada38a17a31c87a5ae50b33b66e74c6e9908a624c0
+2025-11-09T02:11:16.284Z [INFO] #34 writing layer sha256:67b13ba9b56613e692b342ada38a17a31c87a5ae50b33b66e74c6e9908a624c0 0.9s done
+2025-11-09T02:11:16.286Z [INFO] #34 writing layer sha256:6b2035e8b73ed2b018995a7b2c8d607d5527daf948d41964f02cc3ce7ed0699a
+2025-11-09T02:11:41.037Z [INFO] #34 writing layer sha256:6b2035e8b73ed2b018995a7b2c8d607d5527daf948d41964f02cc3ce7ed0699a 24.8s done
+2025-11-09T02:11:41.040Z [INFO] #34 writing layer sha256:6b65a033b6416412017782d8d31ec7590641af96640a8f5e16b5d70b34dce5a5
+2025-11-09T02:11:41.160Z [INFO] #34 writing layer sha256:6b65a033b6416412017782d8d31ec7590641af96640a8f5e16b5d70b34dce5a5 0.1s done
+2025-11-09T02:11:41.162Z [INFO] #34 writing layer sha256:6fff9ddac172249bccfbd7b8172a5552cfa7db607151667ecb8645dd10b3dea3
+2025-11-09T02:11:41.277Z [INFO] #34 writing layer sha256:6fff9ddac172249bccfbd7b8172a5552cfa7db607151667ecb8645dd10b3dea3 0.1s done
+2025-11-09T02:11:41.280Z [INFO] #34 writing layer sha256:72ac9ccfda38d144ef8e3aadbd5851e7fa9aacd261f8e15d7365db0f816d3433 0.1s done
+2025-11-09T02:11:41.282Z [INFO] #34 writing layer sha256:73389fbd088f5ed5d9fd258baced59de092978b4f483920ea6d074522a105119
+2025-11-09T02:11:41.499Z [INFO] #34 writing layer sha256:73389fbd088f5ed5d9fd258baced59de092978b4f483920ea6d074522a105119 0.1s done
+2025-11-09T02:11:41.501Z [INFO] #34 writing layer sha256:7473ded7796ef1364881c1be2cf7a47fb685a95b1bfc658f199707dd42b880d6
+2025-11-09T02:11:43.762Z [INFO] #34 writing layer sha256:7473ded7796ef1364881c1be2cf7a47fb685a95b1bfc658f199707dd42b880d6 2.4s done
+2025-11-09T02:11:43.764Z [INFO] #34 writing layer sha256:76383e413528eea5a42a38ad8c5324786283ac4beab223ab72035e7470e19faf
+2025-11-09T02:12:00.863Z [INFO] #34 writing layer sha256:76383e413528eea5a42a38ad8c5324786283ac4beab223ab72035e7470e19faf 17.1s done
+2025-11-09T02:12:00.865Z [INFO] #34 writing layer sha256:8fe5ace415e9e15f379765ef74ee9c80a2c3d143fe01179fcebde4de5d3bf5d6
+2025-11-09T02:13:15.125Z [INFO] #34 writing layer sha256:8fe5ace415e9e15f379765ef74ee9c80a2c3d143fe01179fcebde4de5d3bf5d6 74.3s done
+2025-11-09T02:13:15.128Z [INFO] #34 writing layer sha256:9ad124bfcb2df1a40731bf3837901bea9daba6aef6348b12734d6527dc25e306
+2025-11-09T02:14:26.565Z [INFO] #34 writing layer sha256:9ad124bfcb2df1a40731bf3837901bea9daba6aef6348b12734d6527dc25e306 71.4s done
+2025-11-09T02:14:26.567Z [INFO] #34 writing layer sha256:9c129cc38119f0749041dd71e6a269f354bd1a219bf60d4d8c235e90bb910715
+2025-11-09T02:14:26.788Z [INFO] #34 writing layer sha256:9c129cc38119f0749041dd71e6a269f354bd1a219bf60d4d8c235e90bb910715 0.1s done
+2025-11-09T02:14:26.791Z [INFO] #34 writing layer sha256:9cb31e2e37eab1bff50f727e979fcacb509e225fb853433a6fe21d2fb34e6305
+2025-11-09T02:14:26.963Z [INFO] #34 writing layer sha256:9cb31e2e37eab1bff50f727e979fcacb509e225fb853433a6fe21d2fb34e6305 0.3s done
+2025-11-09T02:14:26.965Z [INFO] #34 writing layer sha256:9f0769256decabba7b82215f2bf318465f0f98d9863d6cbc25e405bba732ca64
+2025-11-09T02:14:27.193Z [INFO] #34 writing layer sha256:9f0769256decabba7b82215f2bf318465f0f98d9863d6cbc25e405bba732ca64 0.1s done
+2025-11-09T02:14:27.195Z [INFO] #34 writing layer sha256:9fa35d1a5a6b12e3adf212e2c07be9b7887a78f8684ab5a0eb5fc286a251a72d
+2025-11-09T02:14:27.423Z [INFO] #34 writing layer sha256:9fa35d1a5a6b12e3adf212e2c07be9b7887a78f8684ab5a0eb5fc286a251a72d 0.4s done
+2025-11-09T02:14:27.426Z [INFO] #34 writing layer sha256:a4435d714b6760d79045850a4165b5aa822a59c80e89970502af10aa03f2b5a5
+2025-11-09T02:14:32.134Z [INFO] #34 writing layer sha256:a4435d714b6760d79045850a4165b5aa822a59c80e89970502af10aa03f2b5a5 4.7s done
+2025-11-09T02:14:32.136Z [INFO] #34 writing layer sha256:a6893f218d9aa3b0b237d6fc00f60459326a3a3c94f517da02afa21609ac852d
+2025-11-09T02:14:32.364Z [INFO] #34 writing layer sha256:a6893f218d9aa3b0b237d6fc00f60459326a3a3c94f517da02afa21609ac852d 0.2s done
+2025-11-09T02:14:32.366Z [INFO] #34 writing layer sha256:a71a3bf9540fecaae105fb6194a23793aec81afe84e04ac028b914a19f20b756
+2025-11-09T02:14:32.559Z [INFO] #34 writing layer sha256:a71a3bf9540fecaae105fb6194a23793aec81afe84e04ac028b914a19f20b756 0.1s done
+2025-11-09T02:14:32.561Z [INFO] #34 writing layer sha256:b95112eaf2836b9c7193858419f6d17933a873c4a2c9227dc497f5e090ea9c87 0.1s done
+2025-11-09T02:14:32.563Z [INFO] #34 writing layer sha256:bb47c7c41a0d9c978df8b6a49c94f164678fe665a06a485157e0ab2eb2535072
+2025-11-09T02:14:32.731Z [INFO] #34 writing layer sha256:bb47c7c41a0d9c978df8b6a49c94f164678fe665a06a485157e0ab2eb2535072 0.1s done
+2025-11-09T02:14:32.733Z [INFO] #34 writing layer sha256:bcdd754c23047526b85e3f76df64f41ac5d021101f5787f2fa2b47020a999e61 0.1s done
+2025-11-09T02:14:32.734Z [INFO] #34 writing layer sha256:c066a99db707b8d7499f6b13276db81084d59d663a82ff6b320b9a0298fb858d
+2025-11-09T02:14:33.379Z [INFO] #34 writing layer sha256:c066a99db707b8d7499f6b13276db81084d59d663a82ff6b320b9a0298fb858d 0.6s done
+2025-11-09T02:14:33.382Z [INFO] #34 writing layer sha256:c1d2af7fad0f1c6cdaf09c568c086019e834bc6523c30aa9b2b0b24c4b782086
+2025-11-09T02:14:33.598Z [INFO] #34 writing layer sha256:c1d2af7fad0f1c6cdaf09c568c086019e834bc6523c30aa9b2b0b24c4b782086 0.1s done
+2025-11-09T02:14:33.600Z [INFO] #34 writing layer sha256:c8ec6bd3d6c3fc8e46f67467d285fd8fbb6877905f1cb78d370956a08e4f9d1d
+2025-11-09T02:14:39.572Z [INFO] #34 writing layer sha256:c8ec6bd3d6c3fc8e46f67467d285fd8fbb6877905f1cb78d370956a08e4f9d1d 6.1s done
+2025-11-09T02:14:39.574Z [INFO] #34 writing layer sha256:d2985d60c2c6ffd210d077530b4b437458f8a684fdc089d1c7b7f224b904909c
+2025-11-09T02:14:41.394Z [INFO] #34 writing layer sha256:d2985d60c2c6ffd210d077530b4b437458f8a684fdc089d1c7b7f224b904909c 1.8s done
+2025-11-09T02:14:41.396Z [INFO] #34 writing layer sha256:d40e492b2d0e6e7da0c0a299b4e1039354bd8741b5e36d466363664d5e78efde
+2025-11-09T02:14:44.064Z [INFO] #34 writing layer sha256:d40e492b2d0e6e7da0c0a299b4e1039354bd8741b5e36d466363664d5e78efde 2.7s done
+2025-11-09T02:14:44.066Z [INFO] #34 writing layer sha256:d5ed5f5a16f822468c7ccd253632f720b531972374c60d2979e90042eea6baf8
+2025-11-09T02:14:44.282Z [INFO] #34 writing layer sha256:d5ed5f5a16f822468c7ccd253632f720b531972374c60d2979e90042eea6baf8 0.1s done
+2025-11-09T02:14:44.285Z [INFO] #34 writing layer sha256:dd3b514802c201e37aa7d1b36f754894b23b742a0575e2a26533dff3302d1815
+2025-11-09T02:15:16.582Z [INFO] #34 writing layer sha256:dd3b514802c201e37aa7d1b36f754894b23b742a0575e2a26533dff3302d1815 32.5s done
+2025-11-09T02:15:16.587Z [INFO] #34 writing layer sha256:de1d03310308c2871217cf179589d5e7fcd8eee31d8f331b61041347f50404a0
+2025-11-09T02:15:16.734Z [INFO] #34 writing layer sha256:de1d03310308c2871217cf179589d5e7fcd8eee31d8f331b61041347f50404a0 0.1s done
+2025-11-09T02:15:16.736Z [INFO] #34 writing layer sha256:dfd5789539999dc1f9f0b613e8ae2d72710f328cc9b1b6d1299fac5385831453 0.1s done
+2025-11-09T02:15:16.738Z [INFO] #34 writing layer sha256:e207399fa9405375cd38888f67ce8887561dddfe9db0ed49f6e1da8a2023c9be
+2025-11-09T02:15:16.943Z [INFO] #34 writing layer sha256:e207399fa9405375cd38888f67ce8887561dddfe9db0ed49f6e1da8a2023c9be 0.1s done
+2025-11-09T02:15:16.945Z [INFO] #34 writing layer sha256:e78f1630b17f177499897a1899fe7b0bd94bc4966d0619ddaa7cae2ada00722f
+2025-11-09T02:15:17.717Z [INFO] #34 writing layer sha256:e78f1630b17f177499897a1899fe7b0bd94bc4966d0619ddaa7cae2ada00722f 0.9s done
+2025-11-09T02:15:17.719Z [INFO] #34 writing layer sha256:e8c52ff0051876df8163c4f6dc09547b347aac1531274576f028b4ed964e5315
+2025-11-09T02:15:27.678Z [INFO] #34 writing layer sha256:e8c52ff0051876df8163c4f6dc09547b347aac1531274576f028b4ed964e5315 10.0s done
+2025-11-09T02:15:27.680Z [INFO] #34 writing layer sha256:ec7bdff1b0aac4626085175279abc99279c0be8920c2ebe987101e832650c4c3
+2025-11-09T02:15:27.813Z [INFO] #34 writing layer sha256:ec7bdff1b0aac4626085175279abc99279c0be8920c2ebe987101e832650c4c3 0.1s done
+2025-11-09T02:15:27.816Z [INFO] #34 writing layer sha256:ed71f8f81b33b96e7112757f6828a6dcb0861026aa63c5edc672d13e11045f6d 0.1s done
+2025-11-09T02:15:27.818Z [INFO] #34 writing layer sha256:eef681f9ca20bae231b2bb2d8060178877061809e6961ed8c3f076b6e0ffdee4
+2025-11-09T02:15:28.342Z [INFO] #34 writing layer sha256:eef681f9ca20bae231b2bb2d8060178877061809e6961ed8c3f076b6e0ffdee4 0.5s done
+2025-11-09T02:15:28.345Z [INFO] #34 writing layer sha256:f137d4ebcd7dcc5fa2cc0748377eec2fc9c768a86fe6f363edfd03011c154fa2
+2025-11-09T02:15:28.655Z [INFO] #34 writing layer sha256:f137d4ebcd7dcc5fa2cc0748377eec2fc9c768a86fe6f363edfd03011c154fa2 0.3s done
+2025-11-09T02:15:28.657Z [INFO] #34 writing layer sha256:f9ebb2addd8834079145277aa2c08fe1ddb6d37312b58db72fb704d869e97534
+2025-11-09T02:15:29.916Z [INFO] #34 writing layer sha256:f9ebb2addd8834079145277aa2c08fe1ddb6d37312b58db72fb704d869e97534 1.3s done
+2025-11-09T02:15:30.070Z [INFO] #34 preparing build cache for export 321.3s done
+2025-11-09T02:15:30.073Z [INFO] #34 writing config sha256:0c5643ecc961ed8e1e04885650f6528894d927a9e3458353d893d98ca9ce3d9a 0.1s done
+2025-11-09T02:15:30.075Z [INFO] #34 writing cache manifest sha256:30e7b5ec2393a50caf38f35fe48d188727cda6886c6aa0cb258b5ac752f1192c 0.1s done
+2025-11-09T02:15:30.076Z [INFO] #34 DONE 321.3s
+2025-11-09T02:15:30.220Z [INFO] WARNING: current commit information was not captured by the build: git was not found in the system: exec: "git": executable file not found in $PATH
+2025-11-09T02:15:30.238Z [INFO] tender_mcclintock

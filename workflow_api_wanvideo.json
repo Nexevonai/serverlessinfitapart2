@@ -13,7 +13,7 @@
       "block_swap_args": ["134", 0],
       "lora": ["138", 0],
       "multitalk_model": ["120", 0],
-      "model": "wan2.1-i2v-14b-480p-Q4_0_2.gguf",
+      "model": "wan2.1-i2v-14b-480p-Q4_0.gguf",
       "base_precision": "bf16",
       "quantization": "disabled",
       "load_device": "offload_device",
