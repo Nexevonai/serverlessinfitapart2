@@ -114,6 +114,7 @@ RUN /venv/bin/python -m pip install \
 
 # --- 9. 安装 SageAttention (单独安装以避免编译问题) ---
 ENV TORCH_CUDA_ARCH_LIST="8.0;8.6;8.9;9.0;12.0"
+RUN /venv/bin/python -m pip install wheel setuptools
 RUN /venv/bin/python -m pip install sageattention --no-build-isolation
 
 # --- 8. 复制脚本并设置权限 ---
