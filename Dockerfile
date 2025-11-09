@@ -1,5 +1,5 @@
 # --- 1. 基础镜像和环境设置 ---
-FROM runpod/pytorch:2.4.0-py3.11-cuda12.4.1-devel-ubuntu22.04
+FROM runpod/pytorch:2.7.0-py3.11-cuda12.8.0-devel-ubuntu22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ="Etc/UTC"
@@ -13,6 +13,8 @@ RUN apt-get update && apt-get install -y \
     ffmpeg \
     wget \
     unzip \
+    build-essential \
+    ninja-build \
     && apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/*
 
 # --- 3. 设置 Python 虚拟环境 (VENV) ---
@@ -22,7 +24,7 @@ RUN /venv/bin/python -m pip install --upgrade pip
 
 # --- 4. 安装 ComfyUI 和核心 Python 包 ---
 RUN /venv/bin/python -m pip install comfy-cli
-RUN comfy --skip-prompt install --nvidia --cuda-version 12.4
+RUN comfy --skip-prompt install --nvidia --cuda-version 12.8
 
 # --- 关键修改：明确安装所有handler需要的依赖 ---
 RUN /venv/bin/python -m pip install \
@@ -108,8 +110,10 @@ RUN /venv/bin/python -m pip install \
     einops \
     safetensors \
     demucs \
-    accelerate \
-    sageattention
+    accelerate
+
+# --- 9. 安装 SageAttention (单独安装以避免编译问题) ---
+RUN /venv/bin/python -m pip install sageattention --no-build-isolation
 
 # --- 8. 复制脚本并设置权限 ---
 # --- 关键修改：不再复制 workflow_api.json ---
