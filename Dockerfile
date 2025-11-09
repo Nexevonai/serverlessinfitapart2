@@ -24,7 +24,7 @@ RUN /venv/bin/python -m pip install --upgrade pip
 
 # --- 4. 安装 ComfyUI 和核心 Python 包 ---
 RUN /venv/bin/python -m pip install comfy-cli
-RUN comfy --skip-prompt install --nvidia --cuda-version 12.8
+RUN comfy --skip-prompt install --nvidia --cuda-version 12.9
 
 # --- 关键修改：明确安装所有handler需要的依赖 ---
 RUN /venv/bin/python -m pip install \
