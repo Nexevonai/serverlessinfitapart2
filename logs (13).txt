@@ -1,0 +1,178 @@
+2025-11-10T15:26:18.028223930Z ==========
+2025-11-10T15:26:18.028226504Z == CUDA ==
+2025-11-10T15:26:18.028233735Z ==========
+2025-11-10T15:26:18.031227935Z CUDA Version 12.8.1
+2025-11-10T15:26:18.032219239Z Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+2025-11-10T15:26:18.033042242Z This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+2025-11-10T15:26:18.033044496Z By pulling and using the container, you accept the terms and conditions of this license:
+2025-11-10T15:26:18.033046949Z https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+2025-11-10T15:26:18.033050945Z A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+2025-11-10T15:26:18.044055183Z worker-comfyui: Starting ComfyUI in the background...
+2025-11-10T15:26:18.044220539Z Waiting for ComfyUI to be ready...
+2025-11-10T15:26:18.802433229Z .[START] Security scan
+2025-11-10T15:26:18.802448452Z [DONE] Security scan
+2025-11-10T15:26:18.802453199Z ## ComfyUI-Manager: installing dependencies done.
+2025-11-10T15:26:18.802455692Z ** ComfyUI startup time: 2025-11-10 15:26:18.802
+2025-11-10T15:26:18.802568240Z ** Platform: Linux
+2025-11-10T15:26:18.802596151Z ** Python version: 3.11.11 (main, Dec  4 2024, 08:55:07) [GCC 11.4.0]
+2025-11-10T15:26:18.802685674Z ** Python executable: /venv/bin/python
+2025-11-10T15:26:18.802720226Z ** ComfyUI Path: /root/comfy/ComfyUI
+2025-11-10T15:26:18.802808487Z ** ComfyUI Base Folder Path: /root/comfy/ComfyUI
+2025-11-10T15:26:18.802850149Z ** User directory: /root/comfy/ComfyUI/user
+2025-11-10T15:26:18.802914795Z ** ComfyUI-Manager config path: /root/comfy/ComfyUI/user/default/ComfyUI-Manager/config.ini
+2025-11-10T15:26:18.803002806Z ** Log path: /root/comfy/ComfyUI/user/comfyui.log
+2025-11-10T15:26:19.313348279Z Prestartup times for custom nodes:
+2025-11-10T15:26:19.313369811Z    1.2 seconds: /root/comfy/ComfyUI/custom_nodes/ComfyUI-Manager
+2025-11-10T15:26:20.312982584Z Checkpoint files will always be loaded safely.
+2025-11-10T15:26:20.592988065Z Total VRAM 32120 MB, total RAM 386469 MB
+2025-11-10T15:26:20.593015896Z pytorch version: 2.9.0+cu128
+2025-11-10T15:26:20.593353208Z Set vram state to: NORMAL_VRAM
+2025-11-10T15:26:20.593536911Z Device: cuda:0 NVIDIA GeForce RTX 5090 : cudaMallocAsync
+2025-11-10T15:26:20.593682417Z Enabled pinned memory 367145.0
+2025-11-10T15:26:20.631598700Z working around nvidia conv3d memory bug.
+2025-11-10T15:26:21.351539949Z Using pytorch attention
+2025-11-10T15:26:22.680050001Z Python version: 3.11.11 (main, Dec  4 2024, 08:55:07) [GCC 11.4.0]
+2025-11-10T15:26:22.680070121Z ComfyUI version: 0.3.68
+2025-11-10T15:26:22.682272295Z ComfyUI frontend version: 1.28.8
+2025-11-10T15:26:22.682705879Z [Prompt Server] web root: /venv/lib/python3.11/site-packages/comfyui_frontend_package/static
+2025-11-10T15:26:23.540434300Z ### Loading: ComfyUI-Manager (V3.37)
+2025-11-10T15:26:23.540640086Z [ComfyUI-Manager] network_mode: public
+2025-11-10T15:26:23.582141518Z ### ComfyUI Version: v0.3.68-11-g2abd2b5c | Released on '2025-11-08'
+2025-11-10T15:26:23.775171980Z [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+2025-11-10T15:26:23.791116682Z [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+2025-11-10T15:26:23.854247576Z [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+2025-11-10T15:26:23.932095498Z [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+2025-11-10T15:26:23.957744305Z [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+2025-11-10T15:26:24.570289429Z WanVideoWrapper WARNING: FantasyPortrait nodes not available due to error in importing them: No module named 'onnx'
+2025-11-10T15:26:24.601157915Z Import times for custom nodes:
+2025-11-10T15:26:24.601164535Z    0.0 seconds: /root/comfy/ComfyUI/custom_nodes/websocket_image_save.py
+2025-11-10T15:26:24.601170965Z    0.1 seconds: /root/comfy/ComfyUI/custom_nodes/ComfyUI-Manager
+2025-11-10T15:26:24.601175802Z    0.1 seconds: /root/comfy/ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite
+2025-11-10T15:26:24.601198506Z    0.1 seconds: /root/comfy/ComfyUI/custom_nodes/ComfyUI-KJNodes
+2025-11-10T15:26:24.601208180Z    0.2 seconds: /root/comfy/ComfyUI/custom_nodes/audio-separation-nodes-comfyui
+2025-11-10T15:26:24.601213097Z    0.6 seconds: /root/comfy/ComfyUI/custom_nodes/ComfyUI-WanVideoWrapper
+2025-11-10T15:26:24.761770888Z Context impl SQLiteImpl.
+2025-11-10T15:26:24.761810617Z Will assume non-transactional DDL.
+2025-11-10T15:26:24.762467083Z No target revision found.
+2025-11-10T15:26:24.769389964Z Starting server
+2025-11-10T15:26:24.769564223Z To see the GUI go to: http://0.0.0.0:8188
+2025-11-10T15:26:25.116053793Z ......ComfyUI is ready and listening.
+2025-11-10T15:26:25.116085089Z worker-comfyui: Starting RunPod Handler now that ComfyUI is ready.
+2025-11-10T15:26:26.732602126Z WanVideo 2.1 InfiniteTalk Worker 启动中...
+2025-11-10T15:26:26.732632922Z --- Starting Serverless Worker |  Version 1.7.13 ---
+2025-11-10T15:26:27.104766843Z {"requestId": null, "message": "Jobs in queue: 1", "level": "INFO"}
+2025-11-10T15:26:27.104791019Z {"requestId": null, "message": "Jobs in progress: 1", "level": "INFO"}
+2025-11-10T15:26:27.104839120Z {"requestId": "f1b2b790-9f3c-4dbd-9b6c-eecaf7f9b608-e1", "message": "Started.", "level": "INFO"}
+2025-11-10T15:26:27.698538309Z FETCH ComfyRegistry Data: 5/105
+2025-11-10T15:26:28.071746366Z got prompt
+2025-11-10T15:26:30.614278553Z T5Encoder:   0%|          | 0/24 [00:00<?, ?it/s]T5Encoder:   4%|▍         | 1/24 [00:00<00:07,  3.18it/s]T5Encoder: 100%|██████████| 24/24 [00:00<00:00, 71.12it/s]
+2025-11-10T15:26:30.632009881Z prompt token count: tensor([5], device='cuda:0')
+2025-11-10T15:26:30.655774668Z T5Encoder:   0%|          | 0/24 [00:00<?, ?it/s]T5Encoder: 100%|██████████| 24/24 [00:00<00:00, 1083.89it/s]
+2025-11-10T15:26:30.675120205Z prompt token count: tensor([98], device='cuda:0')
+2025-11-10T15:26:32.183861873Z FETCH ComfyRegistry Data: 10/105
+2025-11-10T15:26:36.406803614Z FETCH ComfyRegistry Data: 15/105
+2025-11-10T15:26:36.555442096Z Downloading Qwen model to: /root/comfy/ComfyUI/models/transformers/TencentGameMate/chinese-wav2vec2-base
+2025-11-10T15:26:36.817126482Z /venv/lib/python3.11/site-packages/huggingface_hub/file_download.py:979: UserWarning: `local_dir_use_symlinks` parameter is deprecated and will be ignored. The process to download files to a local folder has been updated and do not rely on symlinks anymore. You only need to pass a destination folder as`local_dir`.
+2025-11-10T15:26:36.817158620Z For more details, check out https://huggingface.co/docs/huggingface_hub/main/en/guides/download#download-files-to-local-folder.
+2025-11-10T15:26:36.817164158Z   warnings.warn(
+2025-11-10T15:26:39.669650805Z Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files:  20%|██        | 1/5 [00:00<00:01,  2.12it/s]Fetching 5 files: 100%|██████████| 5/5 [00:02<00:00,  1.73it/s]Fetching 5 files: 100%|██████████| 5/5 [00:02<00:00,  1.75it/s]
+2025-11-10T15:26:40.290177013Z Downloading models/hdemucs_high_trained.pt to /root/.cache/torch/hub/torchaudio/models/hdemucs_high_trained.pt
+2025-11-10T15:26:40.567197837Z FETCH ComfyRegistry Data: 20/105
+2025-11-10T15:26:44.548122367Z   0%|          | 0.00/319M [00:00<?, ?B/s]  0%|          | 256k/319M [00:00<02:13, 2.50MB/s]  1%|          | 2.25M/319M [00:00<00:25, 13.0MB/s]  5%|▌         | 16.0M/319M [00:00<00:05, 60.5MB/s]  8%|▊         | 26.9M/319M [00:00<00:04, 71.1MB/s] 14%|█▎        | 43.2M/319M [00:00<00:02, 102MB/s]  17%|█▋        | 53.4M/319M [00:00<00:03, 87.5MB/s] 19%|█▉        | 62.1M/319M [00:00<00:03, 71.6MB/s] 22%|██▏       | 71.5M/319M [00:01<00:03, 71.1MB/s] 25%|██▌       | 80.1M/319M [00:01<00:03, 75.6MB/s] 27%|██▋       | 87.8M/319M [00:01<00:03, 63.7MB/s] 32%|███▏      | 101M/319M [00:01<00:03, 74.5MB/s]  36%|███▌      | 115M/319M [00:01<00:02, 89.5MB/s] 39%|███▉      | 124M/319M [00:01<00:02, 75.4MB/s] 42%|████▏     | 134M/319M [00:01<00:02, 77.5MB/s] 45%|████▍     | 142M/319M [00:02<00:02, 66.9MB/s] 47%|████▋     | 149M/319M [00:02<00:02, 63.5MB/s] 50%|████▉     | 160M/319M [00:02<00:02, 68.5MB/s] 52%|█████▏    | 166M/319M [00:02<00:02, 66.2MB/s] 55%|█████▌    | 177M/319M [00:02<00:02, 69.7MB/s] 59%|█████▉    | 190M/319M [00:02<00:01, 77.7MB/s] 62%|██████▏   | 199M/319M [00:02<00:01, 72.1MB/s] 64%|██████▍   | 206M/319M [00:03<00:01, 69.5MB/s] 69%|██████▉   | 221M/319M [00:03<00:01, 87.9MB/s] 73%|███████▎  | 234M/319M [00:03<00:00, 98.8MB/s] 76%|███████▋  | 244M/319M [00:03<00:00, 98.3MB/s] 80%|████████  | 255M/319M [00:03<00:00, 93.6MB/s] 84%|████████▍ | 268M/319M [00:03<00:00, 103MB/s]  87%|████████▋ | 279M/319M [00:03<00:00, 103MB/s] 91%|█████████▏| 292M/319M [00:03<00:00, 106MB/s] 95%|█████████▌| 305M/319M [00:03<00:00, 109MB/s]100%|█████████▉| 319M/319M [00:04<00:00, 110MB/s]100%|██████████| 319M/319M [00:04<00:00, 81.4MB/s]
+2025-11-10T15:26:44.670056493Z FETCH ComfyRegistry Data: 25/105
+2025-11-10T15:26:45.424028490Z [MultiTalk] --- Raw speaker lengths (samples) ---
+2025-11-10T15:26:45.424056612Z   speaker 1: 70635 samples (shape: torch.Size([1, 1, 70635]))
+2025-11-10T15:26:45.424112695Z [MultiTalk] Audio duration (110 frames) is shorter than requested (175 frames). Using 110 frames.
+2025-11-10T15:26:45.424121348Z [MultiTalk] total raw duration = 4.415s
+2025-11-10T15:26:45.424126916Z [MultiTalk] multi_audio_type=para | final waveform shape=torch.Size([1, 1, 70635]) | length=70635 samples | seconds=4.415s (expected max of raw)
+2025-11-10T15:26:45.494480457Z CUDA Compute Capability: 12.0
+2025-11-10T15:26:45.494506927Z Detected model in_channels: 36
+2025-11-10T15:26:45.494514187Z Model cross attention type: i2v, num_heads: 40, num_layers: 40
+2025-11-10T15:26:45.494573135Z Model variant detected: i2v_480
+2025-11-10T15:26:45.564416418Z InfiniteTalk detected, patching model...
+2025-11-10T15:26:45.597795797Z model_type FLOW
+2025-11-10T15:26:45.605379580Z Loading LoRA: lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16 with strength: 0.8
+2025-11-10T15:26:45.892683750Z Requested to load CLIPVisionModelProjection
+2025-11-10T15:26:45.900043330Z loaded completely; 28972.39 MB usable, 1208.10 MB loaded, full load: True
+2025-11-10T15:26:45.938814494Z Clip embeds shape: torch.Size([1, 257, 1280]), dtype: torch.float32
+2025-11-10T15:26:45.938886110Z Combined clip embeds shape: torch.Size([1, 257, 1280])
+2025-11-10T15:26:46.060425810Z Using GGUF to load and assign model weights to device...
+2025-11-10T15:26:48.751930115Z FETCH ComfyRegistry Data: 30/105
+2025-11-10T15:26:52.864088456Z FETCH ComfyRegistry Data: 35/105
+2025-11-10T15:26:58.182886109Z FETCH ComfyRegistry Data: 40/105
+2025-11-10T15:27:02.969724448Z FETCH ComfyRegistry Data: 45/105
+2025-11-10T15:27:07.707454166Z FETCH ComfyRegistry Data: 50/105
+2025-11-10T15:27:11.836861828Z FETCH ComfyRegistry Data: 55/105
+2025-11-10T15:27:13.571211395Z Loading transformer parameters to cuda:0:   0%|          | 0/1633 [00:00<?, ?it/s]Loading transformer parameters to cuda:0:   1%|          | 11/1633 [00:00<00:15, 107.93it/s]Loading transformer parameters to cuda:0: 100%|██████████| 1633/1633 [00:00<00:00, 10023.57it/s]
+2025-11-10T15:27:13.625189574Z ------- Scheduler info -------
+2025-11-10T15:27:13.641543645Z Total timesteps: tensor([999.9091, 970.5882, 916.6667, 785.7143], device='cuda:0')
+2025-11-10T15:27:13.642173741Z Using timesteps: tensor([999.9091, 970.5882, 916.6667, 785.7143], device='cuda:0')
+2025-11-10T15:27:13.642622959Z Using sigmas: tensor([0.9999, 0.9706, 0.9167, 0.7857, 0.0000], device='cuda:0')
+2025-11-10T15:27:13.642710319Z ------------------------------
+2025-11-10T15:27:13.643159196Z sigmas: tensor([0.9999, 0.9706, 0.9167, 0.7857, 0.0000], device='cuda:0')
+2025-11-10T15:27:13.650747126Z Multitalk audio features shapes (per speaker): [(110, 12, 768)]
+2025-11-10T15:27:14.078724508Z Multitalk mode: multitalk
+2025-11-10T15:27:14.080402913Z Sampling 110 frames in 2 windows, at 632x640 with 4 steps
+2025-11-10T15:27:16.060765770Z FETCH ComfyRegistry Data: 60/105
+2025-11-10T15:27:16.474503685Z Sampling audio indices 0-81:   0%|          | 0/4 [00:00<?, ?it/s]Error during model prediction: The size of tensor a (33600) must match the size of tensor b (33180) at non-singleton dimension 1
+2025-11-10T15:27:16.749277739Z Error during sampling: The size of tensor a (33600) must match the size of tensor b (33180) at non-singleton dimension 1
+2025-11-10T15:27:16.991983143Z !!! Exception during processing !!! The size of tensor a (33600) must match the size of tensor b (33180) at non-singleton dimension 1
+2025-11-10T15:27:16.998741800Z Traceback (most recent call last):
+2025-11-10T15:27:16.998782080Z   File "/root/comfy/ComfyUI/execution.py", line 510, in execute
+2025-11-10T15:27:16.998787658Z     output_data, output_ui, has_subgraph, has_pending_tasks = await get_output_data(prompt_id, unique_id, obj, input_data_all, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb, hidden_inputs=hidden_inputs)
+2025-11-10T15:27:16.998793917Z                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-11-10T15:27:16.998798244Z   File "/root/comfy/ComfyUI/execution.py", line 324, in get_output_data
+2025-11-10T15:27:16.998802770Z     return_values = await _async_map_node_over_list(prompt_id, unique_id, obj, input_data_all, obj.FUNCTION, allow_interrupt=True, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb, hidden_inputs=hidden_inputs)
+2025-11-10T15:27:16.998806896Z                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-11-10T15:27:16.998810942Z   File "/root/comfy/ComfyUI/execution.py", line 298, in _async_map_node_over_list
+2025-11-10T15:27:16.998816150Z     await process_inputs(input_dict, i)
+2025-11-10T15:27:16.998820306Z   File "/root/comfy/ComfyUI/execution.py", line 286, in process_inputs
+2025-11-10T15:27:16.998824402Z     result = f(**inputs)
+2025-11-10T15:27:16.998828949Z              ^^^^^^^^^^^
+2025-11-10T15:27:16.998833166Z   File "/root/comfy/ComfyUI/custom_nodes/ComfyUI-WanVideoWrapper/nodes_sampler.py", line 3058, in process
+2025-11-10T15:27:16.998837913Z     raise e
+2025-11-10T15:27:16.998842249Z   File "/root/comfy/ComfyUI/custom_nodes/ComfyUI-WanVideoWrapper/nodes_sampler.py", line 2356, in process
+2025-11-10T15:27:16.998846575Z     noise_pred, _, self.cache_state = predict_with_cfg(
+2025-11-10T15:27:16.998850742Z                                       ^^^^^^^^^^^^^^^^^
+2025-11-10T15:27:16.998854798Z   File "/root/comfy/ComfyUI/custom_nodes/ComfyUI-WanVideoWrapper/nodes_sampler.py", line 1550, in predict_with_cfg
+2025-11-10T15:27:16.998858924Z     raise e
+2025-11-10T15:27:16.998872153Z   File "/root/comfy/ComfyUI/custom_nodes/ComfyUI-WanVideoWrapper/nodes_sampler.py", line 1421, in predict_with_cfg
+2025-11-10T15:27:16.998876570Z     noise_pred_cond, noise_pred_ovi, cache_state_cond = transformer(
+2025-11-10T15:27:16.998880606Z                                                         ^^^^^^^^^^^^
+2025-11-10T15:27:16.998885784Z   File "/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+2025-11-10T15:27:16.998890030Z     return self._call_impl(*args, **kwargs)
+2025-11-10T15:27:16.998894116Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-11-10T15:27:16.998898122Z   File "/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+2025-11-10T15:27:16.998902549Z     return forward_call(*args, **kwargs)
+2025-11-10T15:27:16.998930430Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-11-10T15:27:16.998941537Z   File "/root/comfy/ComfyUI/custom_nodes/ComfyUI-WanVideoWrapper/wanvideo/modules/model.py", line 2934, in forward
+2025-11-10T15:27:16.998951892Z     x, x_ip, lynx_ref_feature, x_ovi = block(x, x_ip=x_ip, lynx_ref_feature=lynx_ref_feature, x_ovi=x_ovi, **kwargs) #run block
+2025-11-10T15:27:16.998972422Z                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-11-10T15:27:16.998991090Z   File "/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+2025-11-10T15:27:16.999001546Z     return self._call_impl(*args, **kwargs)
+2025-11-10T15:27:16.999011451Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-11-10T15:27:16.999017670Z   File "/venv/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+2025-11-10T15:27:16.999027114Z     return forward_call(*args, **kwargs)
+2025-11-10T15:27:16.999033564Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-11-10T15:27:16.999043278Z   File "/root/comfy/ComfyUI/custom_nodes/ComfyUI-WanVideoWrapper/wanvideo/modules/model.py", line 1129, in forward
+2025-11-10T15:27:16.999047484Z     q, k = apply_rope_comfy(q, k, freqs)
+2025-11-10T15:27:16.999053363Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-11-10T15:27:16.999062436Z   File "/root/comfy/ComfyUI/custom_nodes/ComfyUI-WanVideoWrapper/wanvideo/modules/model.py", line 127, in apply_rope_comfy
+2025-11-10T15:27:16.999068355Z     xq_out = freqs_cis[..., 0] * xq_[..., 0] + freqs_cis[..., 1] * xq_[..., 1]
+2025-11-10T15:27:16.999079922Z              ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+2025-11-10T15:27:16.999086702Z RuntimeError: The size of tensor a (33600) must match the size of tensor b (33180) at non-singleton dimension 1
+2025-11-10T15:27:17.004752134Z Prompt executed in 48.93 seconds
+2025-11-10T15:27:17.220562999Z Sampling audio indices 0-81:   0%|          | 0/4 [00:00<?, ?it/s]
+2025-11-10T15:27:20.751053555Z FETCH ComfyRegistry Data: 65/105
+2025-11-10T15:27:24.902354782Z FETCH ComfyRegistry Data: 70/105
+2025-11-10T15:27:29.035875447Z FETCH ComfyRegistry Data: 75/105
+2025-11-10T15:27:33.158449941Z FETCH ComfyRegistry Data: 80/105
+2025-11-10T15:27:37.405502223Z FETCH ComfyRegistry Data: 85/105
+2025-11-10T15:27:41.569830424Z FETCH ComfyRegistry Data: 90/105
+2025-11-10T15:27:45.939137738Z FETCH ComfyRegistry Data: 95/105
+2025-11-10T15:27:50.044434940Z FETCH ComfyRegistry Data: 100/105
+2025-11-10T15:27:54.452785723Z FETCH ComfyRegistry Data: 105/105
+2025-11-10T15:27:54.953099965Z FETCH ComfyRegistry Data [DONE]
+2025-11-10T15:27:55.087184412Z [ComfyUI-Manager] default cache updated: https://api.comfy.org/nodes
+2025-11-10T15:27:56.051511874Z FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json [DONE]
+2025-11-10T15:27:56.176644364Z [ComfyUI-Manager] All startup tasks have been completed.

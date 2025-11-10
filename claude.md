@@ -57,17 +57,43 @@ User API Request → RunPod Handler → ComfyUI (WanVideo) → R2 Storage → Vi
 
 ### Models Used
 
+#### Core Models (Always Required)
+
 | Model | Size | Purpose | Location |
 |-------|------|---------|----------|
-| **wan2.1-i2v-14b-480p-Q4_0_2.gguf** | 10.2GB | Main I2V diffusion model (Q4_0 quantized) | `models/unet/` |
-| **Wan2_1-InfiniteTalk_Single_Q6_K_2.gguf** | 2.04GB | InfiniteTalk audio-driven model | `models/unet/` |
-| **umt5-xxl-enc-fp8_e4m3fn.safetensors** | 6.73GB | Text encoder (FP8 quantized) | `models/text_encoders/` |
+| **Wan2_1-InfiniteTalk_Single_Q8.gguf** | 2.65GB | InfiniteTalk audio-driven model (Q8) | `models/unet/` |
+| **umt5-xxl-enc-bf16.safetensors** | 11.4GB | Text encoder (BF16 precision) | `models/text_encoders/` |
 | **wan_2.1_vae.safetensors** | 254MB | VAE for latent encoding/decoding | `models/vae/` |
 | **clip_vision_h.safetensors** | 1.26GB | CLIP Vision for image understanding | `models/clip_vision/` |
-| **Wan2.1-lightx2v LoRA** | 738MB | Distillation LoRA (4-step generation) | `models/loras/` |
 | **TencentGameMate/chinese-wav2vec2-base** | 1.52GB | Wav2Vec2 audio model (auto-download) | HF cache |
 | **Demucs** | ~500MB | Audio separation model (auto-download) | HF cache |
-| **TOTAL** | **~23GB** | | |
+
+#### Main I2V Model (Choose One)
+
+| Model | Size | Quality | Speed | VRAM | Use Case |
+|-------|------|---------|-------|------|----------|
+| **wan2.1-i2v-14b-480p-Q4_0.gguf** | 10.2GB | Good | Fastest | 12GB | Fast generation, testing |
+| **wan2.1-i2v-14b-480p-Q5_0.gguf** ⭐ | 12.7GB | **Excellent** | Fast | 14GB | **HQ production (recommended)** |
+| wan2.1-i2v-14b-480p-Q6_K.gguf | 14.8GB | Best | Medium | 16GB | Maximum quality |
+
+#### Distill LoRA (Choose One)
+
+| Model | Size | Quality | Detail | VRAM | Use Case |
+|-------|------|---------|--------|------|----------|
+| **lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors** | 738MB | Good | Standard | +0.7GB | Fast generation |
+| **lightx2v_I2V_14B_480p_cfg_step_distill_rank256_bf16.safetensors** ⭐ | 2.9GB | **Excellent** | **4x params** | +2.9GB | **HQ production (recommended)** |
+
+**⭐ Recommended Configuration for High Quality:**
+- Main Model: Q5_0 (~12.7GB)
+- LoRA: rank256 (~2.9GB)
+- **Total Size**: ~35GB download, ~14GB VRAM during generation
+- **Quality**: Matches reference workflows, smooth consistent output
+
+**Alternative Configuration for Speed/VRAM:**
+- Main Model: Q4_0 (~10.2GB)
+- LoRA: rank64 (~738MB)
+- **Total Size**: ~27GB download, ~12GB VRAM during generation
+- **Quality**: Good but may show minor artifacts
 
 ### Custom Nodes
 
@@ -163,12 +189,36 @@ You can override the default 639×640 output video size by passing optional `wid
 
 **Formula**: `Duration (seconds) = num_frames ÷ fps`
 
-**Examples**:
-- 7 seconds: 175 frames ÷ 25 fps
-- 10 seconds: 250 frames ÷ 25 fps
-- 15 seconds: 375 frames ÷ 25 fps
+⚠️ **IMPORTANT: Frame Count Must Be Window-Aligned**
 
-**Note**: The "InfiniteTalk" feature means there's no hardcoded duration limit. Generate videos of any length by adjusting `num_frames`.
+WanVideo InfiniteTalk uses 81-frame windows with 9-frame overlap. To avoid audio padding artifacts and end-of-video distortion, **use only these valid frame counts**:
+
+| Frames | Duration @ 25fps | Windows |
+|--------|------------------|---------|
+| 81     | 3.24s           | 1       |
+| 153    | 6.12s           | 2       |
+| **225**    | **9.00s**           | **3**       |
+| 297    | 11.88s          | 4       |
+| 369    | 14.76s          | 5       |
+| **441**    | **17.64s**          | **6**       |
+| 513    | 20.52s          | 7       |
+| 585    | 23.40s          | 8       |
+| 657    | 26.28s          | 9       |
+| 729    | 29.16s          | 10      |
+
+**Formula**: `valid_frames = 81 + (n - 1) × 72` where n = number of windows
+
+**Why This Matters**: Using non-aligned frame counts (like 175, 250, 425) causes the system to pad audio embeddings with zeros at the end, resulting in poor lip-sync and visible quality degradation in the final seconds of the video.
+
+**Examples**:
+- ❌ 7 seconds: 175 frames → causes 53 frames of padding → distortion
+- ✅ 7 seconds: Use **225 frames** (9s) instead → no padding, perfect quality
+- ❌ 17 seconds: 425 frames → causes 19 frames of padding → distortion
+- ✅ 17 seconds: Use **441 frames** (17.64s) instead → no padding, perfect quality
+
+See `TROUBLESHOOTING.md` for detailed explanation of the audio padding issue.
+
+**Note**: The "InfiniteTalk" feature means there's no hardcoded duration limit. Generate videos of any length by using window-aligned frame counts.
 
 ### Workflow Configuration
 
@@ -360,6 +410,19 @@ These download automatically on first use:
 ---
 
 ## Troubleshooting
+
+### ⚠️ CRITICAL ISSUES
+
+**End-of-Video Distortion (Audio Padding)**:
+- **Symptom**: Video becomes blurry/fuzzy in final seconds, lip-sync breaks down
+- **Cause**: Frame count not aligned with 81-frame window boundaries
+- **Solution**: Use window-aligned frame counts only (see table in "Video Duration Control" section)
+- **Details**: See `TROUBLESHOOTING.md` for full explanation
+
+**Quick Fix**:
+- Instead of 175 frames → use **225 frames**
+- Instead of 425 frames → use **441 frames**
+- Check logs for: `Audio embedding for subject 0 not long enough` warning
 
 ### Common Issues
 

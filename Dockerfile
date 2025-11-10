@@ -45,9 +45,15 @@ RUN mkdir -p \
     $COMFYUI_PATH/models/loras
 
 # --- 6. 下载 WanVideo 模型文件 ---
-# Main I2V model (Q4_0 quantized, ~10.2GB)
+# Main I2V model Q4_0 (quantized, ~10.2GB) - for faster generation
 RUN /venv/bin/huggingface-cli download city96/Wan2.1-I2V-14B-480P-gguf \
     wan2.1-i2v-14b-480p-Q4_0.gguf \
+    --local-dir $COMFYUI_PATH/models/unet \
+    --local-dir-use-symlinks False
+
+# Main I2V model Q5_0 (quantized, ~12.7GB) - for higher quality (REQUIRED for HQ workflows)
+RUN /venv/bin/huggingface-cli download city96/Wan2.1-I2V-14B-480P-gguf \
+    wan2.1-i2v-14b-480p-Q5_0.gguf \
     --local-dir $COMFYUI_PATH/models/unet \
     --local-dir-use-symlinks False
 
@@ -71,13 +77,21 @@ RUN wget -O $COMFYUI_PATH/models/vae/wan_2.1_vae.safetensors \
 RUN wget -O $COMFYUI_PATH/models/clip_vision/clip_vision_h.safetensors \
     "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors"
 
-# Distill LoRA (~738MB - for 4-step fast generation) - Jockerai's version, flattened
+# Distill LoRA rank64 (~738MB - for faster generation)
 RUN /venv/bin/huggingface-cli download Kijai/WanVideo_comfy \
     Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors \
-    --local-dir /tmp/lora_dl && \
-    mv /tmp/lora_dl/Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors \
+    --local-dir /tmp/lora_dl_64 && \
+    mv /tmp/lora_dl_64/Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors \
        $COMFYUI_PATH/models/loras/lightx2v_I2V_14B_480p_cfg_step_distill_rank64_bf16.safetensors && \
-    rm -rf /tmp/lora_dl
+    rm -rf /tmp/lora_dl_64
+
+# Distill LoRA rank256 (~2.9GB - for higher quality, REQUIRED for HQ workflows)
+RUN /venv/bin/huggingface-cli download Kijai/WanVideo_comfy \
+    Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank256_bf16.safetensors \
+    --local-dir /tmp/lora_dl_256 && \
+    mv /tmp/lora_dl_256/Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank256_bf16.safetensors \
+       $COMFYUI_PATH/models/loras/lightx2v_I2V_14B_480p_cfg_step_distill_rank256_bf16.safetensors && \
+    rm -rf /tmp/lora_dl_256
 
 # Note: Wav2Vec2 and Demucs models will auto-download on first use
 
