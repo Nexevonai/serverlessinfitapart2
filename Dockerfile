@@ -57,7 +57,7 @@ RUN /venv/bin/huggingface-cli download city96/Wan2.1-I2V-14B-480P-gguf \
     --local-dir $COMFYUI_PATH/models/unet \
     --local-dir-use-symlinks False
 
-# InfiniteTalk model (GGUF Q8, ~2.65GB) - Jockerai's version, flattened
+# InfiniteTalk model Q8 (~2.65GB) - Jockerai's version
 RUN /venv/bin/huggingface-cli download Kijai/WanVideo_comfy_GGUF \
     InfiniteTalk/Wan2_1-InfiniteTalk_Single_Q8.gguf \
     --local-dir /tmp/infinitetalk_dl && \
