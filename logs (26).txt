@@ -1,0 +1,178 @@
+2025-11-11T01:24:50.878307328Z ==========
+2025-11-11T01:24:50.878310082Z == CUDA ==
+2025-11-11T01:24:50.878318825Z ==========
+2025-11-11T01:24:50.881042010Z CUDA Version 12.8.1
+2025-11-11T01:24:50.882041298Z Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+2025-11-11T01:24:50.882890603Z This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+2025-11-11T01:24:50.882893197Z By pulling and using the container, you accept the terms and conditions of this license:
+2025-11-11T01:24:50.882895650Z https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+2025-11-11T01:24:50.882899376Z A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+2025-11-11T01:24:50.900159008Z worker-comfyui: Starting ComfyUI in the background...
+2025-11-11T01:24:50.900342431Z Waiting for ComfyUI to be ready...
+2025-11-11T01:24:51.747558845Z .[START] Security scan
+2025-11-11T01:24:51.747588909Z [DONE] Security scan
+2025-11-11T01:24:51.747594608Z ## ComfyUI-Manager: installing dependencies done.
+2025-11-11T01:24:51.747612044Z ** ComfyUI startup time: 2025-11-11 01:24:51.747
+2025-11-11T01:24:51.747741006Z ** Platform: Linux
+2025-11-11T01:24:51.747870038Z ** Python version: 3.11.11 (main, Dec  4 2024, 08:55:07) [GCC 11.4.0]
+2025-11-11T01:24:51.747940984Z ** Python executable: /venv/bin/python
+2025-11-11T01:24:51.748030908Z ** ComfyUI Path: /root/comfy/ComfyUI
+2025-11-11T01:24:51.748185858Z ** ComfyUI Base Folder Path: /root/comfy/ComfyUI
+2025-11-11T01:24:51.748247089Z ** User directory: /root/comfy/ComfyUI/user
+2025-11-11T01:24:51.748305366Z ** ComfyUI-Manager config path: /root/comfy/ComfyUI/user/default/ComfyUI-Manager/config.ini
+2025-11-11T01:24:51.748409602Z ** Log path: /root/comfy/ComfyUI/user/comfyui.log
+2025-11-11T01:24:52.252282152Z Prestartup times for custom nodes:
+2025-11-11T01:24:52.252294631Z    1.2 seconds: /root/comfy/ComfyUI/custom_nodes/ComfyUI-Manager
+2025-11-11T01:24:53.272279028Z Checkpoint files will always be loaded safely.
+2025-11-11T01:24:53.581762820Z Total VRAM 32120 MB, total RAM 386469 MB
+2025-11-11T01:24:53.581791823Z pytorch version: 2.9.0+cu128
+2025-11-11T01:24:53.582114013Z Set vram state to: NORMAL_VRAM
+2025-11-11T01:24:53.582332137Z Device: cuda:0 NVIDIA GeForce RTX 5090 : cudaMallocAsync
+2025-11-11T01:24:53.582457083Z Enabled pinned memory 367145.0
+2025-11-11T01:24:53.619962093Z working around nvidia conv3d memory bug.
+2025-11-11T01:24:54.345774841Z Using pytorch attention
+2025-11-11T01:24:55.679874698Z Python version: 3.11.11 (main, Dec  4 2024, 08:55:07) [GCC 11.4.0]
+2025-11-11T01:24:55.679920295Z ComfyUI version: 0.3.68
+2025-11-11T01:24:55.682071038Z ComfyUI frontend version: 1.28.8
+2025-11-11T01:24:55.682511123Z [Prompt Server] web root: /venv/lib/python3.11/site-packages/comfyui_frontend_package/static
+2025-11-11T01:24:56.541418366Z ### Loading: ComfyUI-Manager (V3.37)
+2025-11-11T01:24:56.541625094Z [ComfyUI-Manager] network_mode: public
+2025-11-11T01:24:56.581308789Z ### ComfyUI Version: v0.3.68-11-g2abd2b5c | Released on '2025-11-08'
+2025-11-11T01:24:56.774717399Z [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+2025-11-11T01:24:56.793773245Z [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+2025-11-11T01:24:56.871434332Z [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+2025-11-11T01:24:56.989996006Z [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+2025-11-11T01:24:57.068829599Z [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+2025-11-11T01:24:57.658607685Z WanVideoWrapper WARNING: FantasyPortrait nodes not available due to error in importing them: No module named 'onnx'
+2025-11-11T01:24:57.696436286Z Import times for custom nodes:
+2025-11-11T01:24:57.696442305Z    0.0 seconds: /root/comfy/ComfyUI/custom_nodes/websocket_image_save.py
+2025-11-11T01:24:57.696448134Z    0.1 seconds: /root/comfy/ComfyUI/custom_nodes/ComfyUI-Manager
+2025-11-11T01:24:57.696452601Z    0.1 seconds: /root/comfy/ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite
+2025-11-11T01:24:57.696487052Z    0.1 seconds: /root/comfy/ComfyUI/custom_nodes/ComfyUI-KJNodes
+2025-11-11T01:24:57.696505429Z    0.2 seconds: /root/comfy/ComfyUI/custom_nodes/audio-separation-nodes-comfyui
+2025-11-11T01:24:57.696511088Z    0.8 seconds: /root/comfy/ComfyUI/custom_nodes/ComfyUI-WanVideoWrapper
+2025-11-11T01:24:57.858228105Z Context impl SQLiteImpl.
+2025-11-11T01:24:57.858257969Z Will assume non-transactional DDL.
+2025-11-11T01:24:57.858960806Z No target revision found.
+2025-11-11T01:24:57.866098685Z Starting server
+2025-11-11T01:24:57.866294116Z To see the GUI go to: http://0.0.0.0:8188
+2025-11-11T01:24:57.981843334Z ......ComfyUI is ready and listening.
+2025-11-11T01:24:57.981880239Z worker-comfyui: Starting RunPod Handler now that ComfyUI is ready.
+2025-11-11T01:24:59.586421367Z WanVideo 2.1 InfiniteTalk Worker 启动中...
+2025-11-11T01:24:59.586448607Z --- Starting Serverless Worker |  Version 1.7.13 ---
+2025-11-11T01:24:59.955606601Z {"requestId": null, "message": "Jobs in queue: 1", "level": "INFO"}
+2025-11-11T01:24:59.955640511Z {"requestId": null, "message": "Jobs in progress: 1", "level": "INFO"}
+2025-11-11T01:24:59.955670095Z {"requestId": "3da0bd31-ca19-4903-bbe4-ad89af533388-e1", "message": "Started.", "level": "INFO"}
+2025-11-11T01:25:00.834675477Z got prompt
+2025-11-11T01:25:00.960408660Z FETCH ComfyRegistry Data: 5/105
+2025-11-11T01:25:03.347919129Z T5Encoder:   0%|          | 0/24 [00:00<?, ?it/s]T5Encoder:   4%|▍         | 1/24 [00:00<00:06,  3.39it/s]T5Encoder: 100%|██████████| 24/24 [00:00<00:00, 75.67it/s]
+2025-11-11T01:25:03.367640467Z prompt token count: tensor([29], device='cuda:0')
+2025-11-11T01:25:03.390548930Z T5Encoder:   0%|          | 0/24 [00:00<?, ?it/s]T5Encoder: 100%|██████████| 24/24 [00:00<00:00, 1129.97it/s]
+2025-11-11T01:25:03.411801308Z prompt token count: tensor([98], device='cuda:0')
+2025-11-11T01:25:05.865812605Z FETCH ComfyRegistry Data: 10/105
+2025-11-11T01:25:09.172701928Z Downloading Qwen model to: /root/comfy/ComfyUI/models/transformers/TencentGameMate/chinese-wav2vec2-base
+2025-11-11T01:25:09.430527643Z /venv/lib/python3.11/site-packages/huggingface_hub/file_download.py:979: UserWarning: `local_dir_use_symlinks` parameter is deprecated and will be ignored. The process to download files to a local folder has been updated and do not rely on symlinks anymore. You only need to pass a destination folder as`local_dir`.
+2025-11-11T01:25:09.430562095Z For more details, check out https://huggingface.co/docs/huggingface_hub/main/en/guides/download#download-files-to-local-folder.
+2025-11-11T01:25:09.430568724Z   warnings.warn(
+2025-11-11T01:25:12.321652319Z FETCH ComfyRegistry Data: 15/105
+2025-11-11T01:25:13.902390621Z Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files:  20%|██        | 1/5 [00:04<00:17,  4.35s/it]Fetching 5 files:  80%|████████  | 4/5 [00:04<00:00,  1.17it/s]Fetching 5 files: 100%|██████████| 5/5 [00:04<00:00,  1.12it/s]
+2025-11-11T01:25:14.531284334Z Downloading models/hdemucs_high_trained.pt to /root/.cache/torch/hub/torchaudio/models/hdemucs_high_trained.pt
+2025-11-11T01:25:18.429587848Z FETCH ComfyRegistry Data: 20/105
+2025-11-11T01:25:21.187490539Z   0%|          | 0.00/319M [00:00<?, ?B/s]  0%|          | 256k/319M [00:00<02:14, 2.49MB/s]  1%|          | 2.12M/319M [00:00<00:26, 12.4MB/s]  5%|▌         | 17.1M/319M [00:00<00:04, 63.7MB/s]  9%|▉         | 29.0M/319M [00:00<00:04, 72.6MB/s] 13%|█▎        | 41.2M/319M [00:00<00:03, 85.2MB/s] 15%|█▌        | 49.1M/319M [00:00<00:05, 48.6MB/s] 19%|█▊        | 59.4M/319M [00:01<00:04, 59.9MB/s] 21%|██        | 66.8M/319M [00:01<00:05, 50.4MB/s] 23%|██▎       | 72.9M/319M [00:01<00:06, 42.2MB/s] 26%|██▌       | 81.9M/319M [00:01<00:05, 47.9MB/s] 27%|██▋       | 87.4M/319M [00:01<00:06, 38.0MB/s] 31%|███       | 97.4M/319M [00:02<00:04, 49.6MB/s] 32%|███▏      | 104M/319M [00:02<00:05, 43.6MB/s]  34%|███▍      | 109M/319M [00:02<00:05, 42.4MB/s] 37%|███▋      | 120M/319M [00:02<00:03, 55.8MB/s] 39%|███▉      | 126M/319M [00:02<00:05, 36.8MB/s] 41%|████      | 131M/319M [00:03<00:06, 32.4MB/s] 44%|████▍     | 140M/319M [00:03<00:05, 35.7MB/s] 46%|████▌     | 148M/319M [00:03<00:05, 35.5MB/s] 47%|████▋     | 152M/319M [00:03<00:05, 33.7MB/s] 49%|████▉     | 156M/319M [00:03<00:05, 34.0MB/s] 50%|█████     | 160M/319M [00:03<00:05, 32.1MB/s] 52%|█████▏    | 165M/319M [00:04<00:04, 35.6MB/s] 53%|█████▎    | 170M/319M [00:04<00:04, 37.2MB/s] 55%|█████▍    | 174M/319M [00:04<00:04, 37.8MB/s] 57%|█████▋    | 182M/319M [00:04<00:03, 46.9MB/s] 59%|█████▊    | 187M/319M [00:04<00:02, 49.4MB/s] 61%|██████▏   | 196M/319M [00:04<00:02, 52.5MB/s] 63%|██████▎   | 201M/319M [00:04<00:02, 48.8MB/s] 67%|██████▋   | 212M/319M [00:04<00:01, 66.4MB/s] 70%|███████   | 224M/319M [00:05<00:01, 67.5MB/s] 72%|███████▏  | 230M/319M [00:05<00:01, 62.7MB/s] 78%|███████▊  | 249M/319M [00:05<00:00, 84.7MB/s] 83%|████████▎ | 264M/319M [00:05<00:00, 100MB/s]  86%|████████▌ | 274M/319M [00:05<00:00, 97.7MB/s] 90%|████████▉ | 286M/319M [00:05<00:00, 101MB/s]  93%|█████████▎| 296M/319M [00:05<00:00, 81.4MB/s] 95%|█████████▌| 305M/319M [00:06<00:00, 70.5MB/s] 98%|█████████▊| 312M/319M [00:06<00:00, 64.9MB/s]100%|██████████| 319M/319M [00:06<00:00, 53.6MB/s]
+2025-11-11T01:25:22.144893004Z [MultiTalk] --- Raw speaker lengths (samples) ---
+2025-11-11T01:25:22.144982417Z   speaker 1: 273345 samples (shape: torch.Size([1, 1, 273345]))
+2025-11-11T01:25:22.145005972Z [MultiTalk] Audio duration (427 frames) is shorter than requested (441 frames). Using 427 frames.
+2025-11-11T01:25:22.145021165Z [MultiTalk] total raw duration = 17.084s
+2025-11-11T01:25:22.145030038Z [MultiTalk] multi_audio_type=para | final waveform shape=torch.Size([1, 1, 273345]) | length=273345 samples | seconds=17.084s (expected max of raw)
+2025-11-11T01:25:22.217294209Z CUDA Compute Capability: 12.0
+2025-11-11T01:25:22.217335600Z Detected model in_channels: 36
+2025-11-11T01:25:22.217368679Z Model cross attention type: i2v, num_heads: 40, num_layers: 40
+2025-11-11T01:25:22.217440607Z Model variant detected: i2v_480
+2025-11-11T01:25:22.282199261Z InfiniteTalk detected, patching model...
+2025-11-11T01:25:22.314812376Z model_type FLOW
+2025-11-11T01:25:22.319266148Z Loading LoRA: lightx2v_I2V_14B_480p_cfg_step_distill_rank256_bf16 with strength: 0.8
+2025-11-11T01:25:22.511649261Z FETCH ComfyRegistry Data: 25/105
+2025-11-11T01:25:22.605538865Z Requested to load CLIPVisionModelProjection
+2025-11-11T01:25:22.613148286Z loaded completely; 28972.39 MB usable, 1208.10 MB loaded, full load: True
+2025-11-11T01:25:22.646457418Z Clip embeds shape: torch.Size([1, 257, 1280]), dtype: torch.float32
+2025-11-11T01:25:22.646544888Z Combined clip embeds shape: torch.Size([1, 257, 1280])
+2025-11-11T01:25:23.172423529Z Using GGUF to load and assign model weights to device...
+2025-11-11T01:25:26.612380366Z FETCH ComfyRegistry Data: 30/105
+2025-11-11T01:25:30.869159776Z FETCH ComfyRegistry Data: 35/105
+2025-11-11T01:25:38.032841136Z FETCH ComfyRegistry Data: 40/105
+2025-11-11T01:25:42.098771048Z FETCH ComfyRegistry Data: 45/105
+2025-11-11T01:25:46.198510776Z FETCH ComfyRegistry Data: 50/105
+2025-11-11T01:25:50.274555729Z FETCH ComfyRegistry Data: 55/105
+2025-11-11T01:25:54.374882722Z FETCH ComfyRegistry Data: 60/105
+2025-11-11T01:25:58.468315128Z FETCH ComfyRegistry Data: 65/105
+2025-11-11T01:26:02.591092843Z FETCH ComfyRegistry Data: 70/105
+2025-11-11T01:26:06.743450676Z FETCH ComfyRegistry Data: 75/105
+2025-11-11T01:26:10.861008338Z FETCH ComfyRegistry Data: 80/105
+2025-11-11T01:26:15.010685780Z FETCH ComfyRegistry Data: 85/105
+2025-11-11T01:26:19.144544385Z FETCH ComfyRegistry Data: 90/105
+2025-11-11T01:26:23.268015182Z FETCH ComfyRegistry Data: 95/105
+2025-11-11T01:26:26.731480256Z Loading transformer parameters to cuda:0:   0%|          | 0/1633 [00:00<?, ?it/s]Loading transformer parameters to cuda:0:  38%|███▊      | 625/1633 [00:00<00:00, 6249.71it/s]Loading transformer parameters to cuda:0: 100%|██████████| 1633/1633 [00:00<00:00, 12276.95it/s]
+2025-11-11T01:26:26.810832661Z ------- Scheduler info -------
+2025-11-11T01:26:26.826816964Z Total timesteps: tensor([999.9091, 970.5882, 916.6667, 785.7143], device='cuda:0')
+2025-11-11T01:26:26.827478029Z Using timesteps: tensor([999.9091, 970.5882, 916.6667, 785.7143], device='cuda:0')
+2025-11-11T01:26:26.827948870Z Using sigmas: tensor([0.9999, 0.9706, 0.9167, 0.7857, 0.0000], device='cuda:0')
+2025-11-11T01:26:26.827963682Z ------------------------------
+2025-11-11T01:26:26.828430687Z sigmas: tensor([0.9999, 0.9706, 0.9167, 0.7857, 0.0000], device='cuda:0')
+2025-11-11T01:26:26.846389410Z Multitalk audio features shapes (per speaker): [(427, 12, 768)]
+2025-11-11T01:26:27.302050448Z Multitalk mode: multitalk
+2025-11-11T01:26:27.303215472Z Sampling 427 frames in 6 windows, at 1280x720 with 4 steps
+2025-11-11T01:26:27.632436465Z FETCH ComfyRegistry Data: 100/105
+2025-11-11T01:26:32.529138822Z FETCH ComfyRegistry Data: 105/105
+2025-11-11T01:26:33.029422449Z FETCH ComfyRegistry Data [DONE]
+2025-11-11T01:26:33.201167079Z Sampling audio indices 0-81:   0%|          | 0/4 [00:00<?, ?it/s][ComfyUI-Manager] default cache updated: https://api.comfy.org/nodes
+2025-11-11T01:26:33.862717182Z FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json [DONE]
+2025-11-11T01:26:33.922003146Z [ComfyUI-Manager] All startup tasks have been completed.
+2025-11-11T01:29:10.233106819Z Sampling audio indices 0-81:  25%|██▌       | 1/4 [00:48<02:26, 48.89s/it]Sampling audio indices 0-81:  50%|█████     | 2/4 [01:22<01:20, 40.07s/it]Sampling audio indices 0-81:  75%|███████▌  | 3/4 [01:56<00:37, 37.28s/it]Sampling audio indices 0-81: 100%|██████████| 4/4 [02:30<00:00, 35.99s/it]Sampling audio indices 0-81: 100%|██████████| 4/4 [02:38<00:00, 39.53s/it]
+2025-11-11T01:31:42.086706602Z Sampling audio indices 72-153:   0%|          | 0/4 [00:00<?, ?it/s]Sampling audio indices 72-153:  25%|██▌       | 1/4 [00:34<01:42, 34.10s/it]Sampling audio indices 72-153:  50%|█████     | 2/4 [01:08<01:08, 34.09s/it]Sampling audio indices 72-153:  75%|███████▌  | 3/4 [01:42<00:34, 34.08s/it]Sampling audio indices 72-153: 100%|██████████| 4/4 [02:16<00:00, 34.07s/it]Sampling audio indices 72-153: 100%|██████████| 4/4 [02:23<00:00, 35.92s/it]
+2025-11-11T01:34:14.016804450Z Sampling audio indices 144-225:   0%|          | 0/4 [00:00<?, ?it/s]Sampling audio indices 144-225:  25%|██▌       | 1/4 [00:34<01:42, 34.06s/it]Sampling audio indices 144-225:  50%|█████     | 2/4 [01:08<01:08, 34.05s/it]Sampling audio indices 144-225:  75%|███████▌  | 3/4 [01:42<00:34, 34.04s/it]Sampling audio indices 144-225: 100%|██████████| 4/4 [02:16<00:00, 34.04s/it]Sampling audio indices 144-225: 100%|██████████| 4/4 [02:23<00:00, 35.90s/it]
+2025-11-11T01:36:46.048929434Z Sampling audio indices 216-297:   0%|          | 0/4 [00:00<?, ?it/s]Sampling audio indices 216-297:  25%|██▌       | 1/4 [00:34<01:42, 34.08s/it]Sampling audio indices 216-297:  50%|█████     | 2/4 [01:08<01:08, 34.04s/it]Sampling audio indices 216-297:  75%|███████▌  | 3/4 [01:42<00:34, 34.04s/it]Sampling audio indices 216-297: 100%|██████████| 4/4 [02:16<00:00, 34.04s/it]Sampling audio indices 216-297: 100%|██████████| 4/4 [02:23<00:00, 35.88s/it]
+2025-11-11T01:39:18.189898260Z Sampling audio indices 288-369:   0%|          | 0/4 [00:00<?, ?it/s]Sampling audio indices 288-369:  25%|██▌       | 1/4 [00:34<01:42, 34.09s/it]Sampling audio indices 288-369:  50%|█████     | 2/4 [01:08<01:08, 34.06s/it]Sampling audio indices 288-369:  75%|███████▌  | 3/4 [01:42<00:34, 34.05s/it]Sampling audio indices 288-369: 100%|██████████| 4/4 [02:16<00:00, 34.05s/it]Sampling audio indices 288-369: 100%|██████████| 4/4 [02:23<00:00, 35.90s/it]
+2025-11-11T01:39:21.741278903Z Audio embedding for subject 0 not long enough: 427, need 441, padding...
+2025-11-11T01:39:21.741305643Z Padding length: 17
+2025-11-11T01:41:50.323601147Z Sampling audio indices 360-441:   0%|          | 0/4 [00:00<?, ?it/s]Sampling audio indices 360-441:  25%|██▌       | 1/4 [00:34<01:42, 34.05s/it]Sampling audio indices 360-441:  50%|█████     | 2/4 [01:08<01:08, 34.05s/it]Sampling audio indices 360-441:  75%|███████▌  | 3/4 [01:42<00:34, 34.06s/it]Sampling audio indices 360-441: 100%|██████████| 4/4 [02:16<00:00, 34.05s/it]Sampling audio indices 360-441: 100%|██████████| 4/4 [02:23<00:00, 35.90s/it]
+2025-11-11T01:41:54.515273797Z Allocated memory: memory=0.937 GB
+2025-11-11T01:41:54.515302660Z Max allocated memory: max_memory=14.131 GB
+2025-11-11T01:41:54.515357332Z Max reserved memory: max_reserved=14.625 GB
+2025-11-11T01:42:06.806411560Z Prompt executed in 00:17:05
+2025-11-11T01:42:08.384393265Z {"requestId": "3da0bd31-ca19-4903-bbe4-ad89af533388-e1", "message": "Finished.", "level": "INFO"}
+2025-11-11T01:53:04.831359319Z {"requestId": null, "message": "Jobs in queue: 1", "level": "INFO"}
+2025-11-11T01:53:04.831434211Z {"requestId": null, "message": "Jobs in progress: 1", "level": "INFO"}
+2025-11-11T01:53:04.831440069Z {"requestId": "ca9d827b-3d61-4d9e-83ad-6752f55289f3-e1", "message": "Started.", "level": "INFO"}
+2025-11-11T01:53:05.686042497Z got prompt
+2025-11-11T01:53:06.716474075Z The local file (/root/.cache/torch/hub/torchaudio/models/hdemucs_high_trained.pt) exists. Skipping the download.
+2025-11-11T01:53:07.029495727Z [MultiTalk] --- Raw speaker lengths (samples) ---
+2025-11-11T01:53:07.029549087Z   speaker 1: 236160 samples (shape: torch.Size([1, 1, 236160]))
+2025-11-11T01:53:07.029563658Z [MultiTalk] total raw duration = 14.760s
+2025-11-11T01:53:07.029570849Z [MultiTalk] multi_audio_type=para | final waveform shape=torch.Size([1, 1, 236160]) | length=236160 samples | seconds=14.760s (expected max of raw)
+2025-11-11T01:53:07.102967679Z Requested to load CLIPVisionModelProjection
+2025-11-11T01:53:07.110799342Z loaded completely; 28846.56 MB usable, 1208.10 MB loaded, full load: True
+2025-11-11T01:53:07.137763306Z Clip embeds shape: torch.Size([1, 257, 1280]), dtype: torch.float32
+2025-11-11T01:53:07.137822384Z Combined clip embeds shape: torch.Size([1, 257, 1280])
+2025-11-11T01:53:07.236791836Z Using GGUF to load and assign model weights to device...
+2025-11-11T01:56:06.215124421Z Loading transformer parameters to cuda:0:   0%|          | 0/1633 [00:00<?, ?it/s]Loading transformer parameters to cuda:0:   1%|          | 11/1633 [00:00<00:14, 108.36it/s]Loading transformer parameters to cuda:0: 100%|██████████| 1633/1633 [00:00<00:00, 10713.50it/s]
+2025-11-11T01:56:06.299352390Z ------- Scheduler info -------
+2025-11-11T01:56:06.300470806Z Total timesteps: tensor([999.9091, 970.5882, 916.6667, 785.7143], device='cuda:0')
+2025-11-11T01:56:06.301021696Z Using timesteps: tensor([999.9091, 970.5882, 916.6667, 785.7143], device='cuda:0')
+2025-11-11T01:56:06.301499428Z Using sigmas: tensor([0.9999, 0.9706, 0.9167, 0.7857, 0.0000], device='cuda:0')
+2025-11-11T01:56:06.301581690Z ------------------------------
+2025-11-11T01:56:06.302033573Z sigmas: tensor([0.9999, 0.9706, 0.9167, 0.7857, 0.0000], device='cuda:0')
+2025-11-11T01:56:06.319252845Z Multitalk audio features shapes (per speaker): [(369, 12, 768)]
+2025-11-11T01:56:06.764540454Z Multitalk mode: multitalk
+2025-11-11T01:56:06.765526523Z Sampling 369 frames in 6 windows, at 1280x720 with 4 steps
+2025-11-11T01:58:35.133206282Z Sampling audio indices 0-81:   0%|          | 0/4 [00:00<?, ?it/s]Sampling audio indices 0-81:  25%|██▌       | 1/4 [00:34<01:42, 34.33s/it]Sampling audio indices 0-81:  50%|█████     | 2/4 [01:08<01:08, 34.07s/it]Sampling audio indices 0-81:  75%|███████▌  | 3/4 [01:42<00:33, 34.00s/it]Sampling audio indices 0-81: 100%|██████████| 4/4 [02:16<00:00, 34.01s/it]Sampling audio indices 0-81: 100%|██████████| 4/4 [02:23<00:00, 35.89s/it]
+2025-11-11T02:01:06.772166072Z Sampling audio indices 72-153:   0%|          | 0/4 [00:00<?, ?it/s]Sampling audio indices 72-153:  25%|██▌       | 1/4 [00:34<01:42, 34.09s/it]Sampling audio indices 72-153:  50%|█████     | 2/4 [01:08<01:08, 34.09s/it]Sampling audio indices 72-153:  75%|███████▌  | 3/4 [01:42<00:34, 34.24s/it]Sampling audio indices 72-153: 100%|██████████| 4/4 [02:16<00:00, 34.17s/it]Sampling audio indices 72-153: 100%|██████████| 4/4 [02:24<00:00, 36.01s/it]
+2025-11-11T02:03:37.950968779Z Sampling audio indices 144-225:   0%|          | 0/4 [00:00<?, ?it/s]Sampling audio indices 144-225:  25%|██▌       | 1/4 [00:34<01:42, 34.04s/it]Sampling audio indices 144-225:  50%|█████     | 2/4 [01:08<01:08, 34.03s/it]Sampling audio indices 144-225:  75%|███████▌  | 3/4 [01:42<00:34, 34.03s/it]Sampling audio indices 144-225: 100%|██████████| 4/4 [02:16<00:00, 34.04s/it]Sampling audio indices 144-225: 100%|██████████| 4/4 [02:23<00:00, 35.88s/it]
+2025-11-11T02:06:09.192574639Z Sampling audio indices 216-297:   0%|          | 0/4 [00:00<?, ?it/s]Sampling audio indices 216-297:  25%|██▌       | 1/4 [00:34<01:42, 34.08s/it]Sampling audio indices 216-297:  50%|█████     | 2/4 [01:08<01:08, 34.06s/it]Sampling audio indices 216-297:  75%|███████▌  | 3/4 [01:42<00:34, 34.05s/it]Sampling audio indices 216-297: 100%|██████████| 4/4 [02:16<00:00, 34.03s/it]Sampling audio indices 216-297: 100%|██████████| 4/4 [02:23<00:00, 35.91s/it]
+2025-11-11T02:06:12.360216918Z Audio embedding for subject 0 not long enough: 369, need 369, padding...
+2025-11-11T02:06:12.360513259Z Padding length: 3
+2025-11-11T02:08:40.862417749Z Sampling audio indices 288-369:   0%|          | 0/4 [00:00<?, ?it/s]Sampling audio indices 288-369:  25%|██▌       | 1/4 [00:33<01:41, 34.00s/it]Sampling audio indices 288-369:  50%|█████     | 2/4 [01:08<01:08, 34.03s/it]Sampling audio indices 288-369:  75%|███████▌  | 3/4 [01:42<00:34, 34.04s/it]Sampling audio indices 288-369: 100%|██████████| 4/4 [02:16<00:00, 34.04s/it]Sampling audio indices 288-369: 100%|██████████| 4/4 [02:23<00:00, 35.89s/it]
+2025-11-11T02:08:44.191221646Z Allocated memory: memory=0.936 GB
+2025-11-11T02:08:44.191242056Z Max allocated memory: max_memory=14.130 GB
+2025-11-11T02:08:44.191244720Z Max reserved memory: max_reserved=14.594 GB
+2025-11-11T02:08:50.770865898Z Prompt executed in 00:15:45
+2025-11-11T02:08:52.151219034Z {"requestId": "ca9d827b-3d61-4d9e-83ad-6752f55289f3-e1", "message": "Finished.", "level": "INFO"}

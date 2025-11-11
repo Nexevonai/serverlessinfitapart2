@@ -51,9 +51,15 @@ RUN /venv/bin/huggingface-cli download city96/Wan2.1-I2V-14B-480P-gguf \
     --local-dir $COMFYUI_PATH/models/unet \
     --local-dir-use-symlinks False
 
-# Main I2V model Q5_0 (quantized, ~12.7GB) - for higher quality (REQUIRED for HQ workflows)
+# Main I2V model Q5_0 (quantized, ~12.7GB) - for higher quality
 RUN /venv/bin/huggingface-cli download city96/Wan2.1-I2V-14B-480P-gguf \
     wan2.1-i2v-14b-480p-Q5_0.gguf \
+    --local-dir $COMFYUI_PATH/models/unet \
+    --local-dir-use-symlinks False
+
+# Main I2V model Q6_K (quantized, ~15.5GB) - REQUIRED for 1280x720 HQ workflows to prevent degradation
+RUN /venv/bin/huggingface-cli download city96/Wan2.1-I2V-14B-480P-gguf \
+    wan2.1-i2v-14b-480p-Q6_K.gguf \
     --local-dir $COMFYUI_PATH/models/unet \
     --local-dir-use-symlinks False
 

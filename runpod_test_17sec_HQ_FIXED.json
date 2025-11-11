@@ -1,7 +1,7 @@
 {
   "input": {
-    "image_url": "https://raw.githubusercontent.com/Nexevonai/infittalktest/main/50women.png",
-    "audio_url": "https://raw.githubusercontent.com/Nexevonai/infittalktest/main/sendemail.mp3",
+    "image_url": "https://raw.githubusercontent.com/Nexevonai/infittalktest/main/openart-image_u_Ow92eD_1758207646548_raw.jpg",
+    "audio_url": "https://raw.githubusercontent.com/Nexevonai/infittalktest/main/long17secs.mp3",
     "workflow": {
       "120": {
         "inputs": {
@@ -14,9 +14,18 @@
       },
       "122": {
         "inputs": {
-          "block_swap_args": ["134", 0],
-          "lora": ["138", 0],
-          "multitalk_model": ["120", 0],
+          "block_swap_args": [
+            "134",
+            0
+          ],
+          "lora": [
+            "138",
+            0
+          ],
+          "multitalk_model": [
+            "120",
+            0
+          ],
           "model": "wan2.1-i2v-14b-480p-Q6_K.gguf",
           "base_precision": "bf16",
           "quantization": "disabled",
@@ -40,8 +49,14 @@
       },
       "130": {
         "inputs": {
-          "vae": ["129", 0],
-          "samples": ["213", 0],
+          "vae": [
+            "129",
+            0
+          ],
+          "samples": [
+            "213",
+            0
+          ],
           "enable_vae_tiling": false,
           "tile_x": 272,
           "tile_y": 272,
@@ -56,9 +71,18 @@
       },
       "131": {
         "inputs": {
-          "images": ["130", 0],
-          "audio": ["159", 0],
-          "frame_rate": ["229", 0],
+          "images": [
+            "130",
+            0
+          ],
+          "audio": [
+            "159",
+            0
+          ],
+          "frame_rate": [
+            "229",
+            0
+          ],
           "loop_count": 0,
           "filename_prefix": "WanVideo2_1_multitalk",
           "format": "video/h264-mp4",
@@ -91,7 +115,10 @@
       },
       "135": {
         "inputs": {
-          "t5": ["136", 0],
+          "t5": [
+            "136",
+            0
+          ],
           "positive_prompt": "a woman is talking. She mostly look at the camera and sometimes moves her hands naturally while speaking. her nail color is sand beige color.",
           "negative_prompt": "bright tones, overexposed, static, blurred details, subtitles, style, works, paintings, images, static, overall gray, worst quality, low quality, JPEG compression residue, ugly, incomplete, extra fingers, poorly drawn hands, poorly drawn faces, deformed, disfigured, misshapen limbs, fused fingers, still picture, messy background, three legs, many people in the background, walking backwards",
           "force_offload": true,
@@ -140,9 +167,12 @@
       },
       "159": {
         "inputs": {
-          "audio": ["217", 0],
+          "audio": [
+            "217",
+            0
+          ],
           "start_time": "0:00",
-          "end_time": "0:07"
+          "end_time": "0:18"
         },
         "class_type": "AudioCrop",
         "_meta": {
@@ -151,7 +181,10 @@
       },
       "170": {
         "inputs": {
-          "audio": ["159", 0],
+          "audio": [
+            "159",
+            0
+          ],
           "chunk_fade_shape": "linear",
           "chunk_length": 10.0,
           "chunk_overlap": 0.1
@@ -163,9 +196,18 @@
       },
       "171": {
         "inputs": {
-          "image": ["207", 0],
-          "width": ["210", 0],
-          "height": ["211", 0],
+          "image": [
+            "207",
+            0
+          ],
+          "width": [
+            "210",
+            0
+          ],
+          "height": [
+            "211",
+            0
+          ],
           "upscale_method": "lanczos",
           "keep_proportion": "pad_edge",
           "pad_color": "0, 0, 0",
@@ -204,11 +246,26 @@
       },
       "192": {
         "inputs": {
-          "vae": ["129", 0],
-          "start_image": ["171", 0],
-          "clip_embeds": ["193", 0],
-          "width": ["210", 0],
-          "height": ["211", 0],
+          "vae": [
+            "129",
+            0
+          ],
+          "start_image": [
+            "171",
+            0
+          ],
+          "clip_embeds": [
+            "193",
+            0
+          ],
+          "width": [
+            "210",
+            0
+          ],
+          "height": [
+            "211",
+            0
+          ],
           "frame_window_size": 81,
           "motion_frame": 9,
           "force_offload": false,
@@ -222,10 +279,16 @@
       },
       "193": {
         "inputs": {
-          "clip_vision": ["173", 0],
-          "image_1": ["171", 0],
-          "strength_1": 1.0,
-          "strength_2": 1.0,
+          "clip_vision": [
+            "173",
+            0
+          ],
+          "image_1": [
+            "171",
+            0
+          ],
+          "strength_1": 1,
+          "strength_2": 1,
           "crop": "center",
           "combine_embeds": "average",
           "force_offload": true,
@@ -239,10 +302,22 @@
       },
       "194": {
         "inputs": {
-          "wav2vec_model": ["137", 0],
-          "audio_1": ["170", 3],
-          "num_frames": ["214", 0],
-          "fps": ["229", 0],
+          "wav2vec_model": [
+            "137",
+            0
+          ],
+          "audio_1": [
+            "170",
+            3
+          ],
+          "num_frames": [
+            "214",
+            0
+          ],
+          "fps": [
+            "229",
+            0
+          ],
           "normalize_loudness": true,
           "audio_scale": 1.0,
           "audio_cfg_scale": 1.0,
@@ -264,7 +339,10 @@
       },
       "208": {
         "inputs": {
-          "images": ["171", 0]
+          "images": [
+            "171",
+            0
+          ]
         },
         "class_type": "PreviewImage",
         "_meta": {
@@ -291,18 +369,30 @@
       },
       "213": {
         "inputs": {
-          "model": ["122", 0],
-          "image_embeds": ["192", 0],
-          "text_embeds": ["135", 0],
-          "multitalk_embeds": ["194", 0],
-          "steps": 4,
-          "cfg": 1.0,
-          "shift": 11.0,
+          "model": [
+            "122",
+            0
+          ],
+          "image_embeds": [
+            "192",
+            0
+          ],
+          "text_embeds": [
+            "135",
+            0
+          ],
+          "multitalk_embeds": [
+            "194",
+            0
+          ],
+          "steps": 8,
+          "cfg": 1,
+          "shift": 11,
           "seed": 0,
           "force_offload": true,
           "scheduler": "flowmatch_distill",
           "riflex_freq_index": 0,
-          "denoise_strength": 1.0,
+          "denoise_strength": 1,
           "batched_cfg": false,
           "rope_function": "comfy",
           "start_step": 0,
@@ -316,7 +406,7 @@
       },
       "214": {
         "inputs": {
-          "value": 225
+          "value": 369
         },
         "class_type": "INTConstant",
         "_meta": {

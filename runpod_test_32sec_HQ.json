@@ -26,7 +26,7 @@
             "120",
             0
           ],
-          "model": "wan2.1-i2v-14b-480p-Q5_0.gguf",
+          "model": "wan2.1-i2v-14b-480p-Q6_K.gguf",
           "base_precision": "bf16",
           "quantization": "disabled",
           "load_device": "offload_device",
