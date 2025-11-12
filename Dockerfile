@@ -42,7 +42,8 @@ RUN mkdir -p \
     $COMFYUI_PATH/models/text_encoders \
     $COMFYUI_PATH/models/vae \
     $COMFYUI_PATH/models/clip_vision \
-    $COMFYUI_PATH/models/loras
+    $COMFYUI_PATH/models/loras \
+    $COMFYUI_PATH/models/wav2vec2
 
 # --- 6. 下载 WanVideo 模型文件 ---
 # Main I2V model Q4_0 (quantized, ~10.2GB) - for faster generation
@@ -99,7 +100,11 @@ RUN /venv/bin/huggingface-cli download Kijai/WanVideo_comfy \
        $COMFYUI_PATH/models/loras/lightx2v_I2V_14B_480p_cfg_step_distill_rank256_bf16.safetensors && \
     rm -rf /tmp/lora_dl_256
 
-# Note: Wav2Vec2 and Demucs models will auto-download on first use
+# Wav2Vec2 model (FP16 safetensors, ~378MB - for stable audio embedding)
+RUN wget -O $COMFYUI_PATH/models/wav2vec2/wav2vec2-chinese-base_fp16.safetensors \
+    "https://huggingface.co/Kijai/wav2vec2_safetensors/resolve/main/wav2vec2-chinese-base_fp16.safetensors"
+
+# Note: Demucs model will auto-download on first use
 
 # --- 7. 安装 WanVideo 自定义节点 ---
 # Main WanVideo wrapper

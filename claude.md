@@ -95,6 +95,54 @@ User API Request → RunPod Handler → ComfyUI (WanVideo) → R2 Storage → Vi
 - **Total Size**: ~27GB download, ~12GB VRAM during generation
 - **Quality**: Good but may show minor artifacts
 
+### ⭐ NEW: Pixaroma InfiniteTalk Workflow (Recommended for Long Videos)
+
+Based on analysis of the Pixaroma "Infinite Talk Workflow Wan 2.1 i2v 14B 480p" (Episode 60), we discovered **critical settings** that prevent quality degradation in long videos:
+
+**Critical Configuration Differences:**
+
+| Setting | Standard Setup | Pixaroma Optimized | Impact |
+|---------|---------------|-------------------|---------|
+| **base_precision** | bf16 | **fp16_fast** | 🔥 Major speed/quality boost |
+| **attention_mode** | sdpa | **sageattn** | 🔥 Better quality consistency |
+| **motion_frame** | 9 | **25** | 🔥 Smoother motion |
+| **colormatch** | mkl | **disabled** | Prevents color shifts |
+| **mode** (8th param) | "auto" or "" | **"infinitetalk"** | 🔥 Enables infinite duration |
+| **scheduler** | flowmatch_distill | **dpm++_sde** | Better for longer videos |
+| **steps** | 4 | **6** | Slightly better quality |
+| **add_noise_to_samples** | false | **true** | Better temporal consistency |
+| **blocks_to_swap** | 40 | **20** | Less aggressive offloading |
+| **prefetch_blocks** | 0 | **1** | Memory optimization |
+| **LoRA strength** | 0.8 | **1.0** | Full LoRA effect |
+| **Wav2Vec2** | Auto-download | **Safetensors** | More stable loading |
+
+**Recommended Production Config (Pixaroma + Upgrades):**
+```json
+{
+  "Main Model": "wan2.1-i2v-14b-480p-Q5_0.gguf",
+  "base_precision": "fp16_fast",
+  "attention_mode": "sageattn",
+  "LoRA": "rank64 (strength 1.0)",
+  "Text Encoder": "BF16",
+  "InfiniteTalk": "Q8",
+  "Wav2Vec2": "wav2vec2-chinese-base_fp16.safetensors",
+  "Resolution": "480×832 (9:16) or 832×480 (16:9)",
+  "Scheduler": "dpm++_sde",
+  "Steps": 6
+}
+```
+
+**Why This Works:**
+- **fp16_fast**: Uses optimized FP16 operations instead of BF16, faster on most GPUs
+- **sageattn**: Flash Attention 2 optimizations reduce memory fragmentation over long sequences
+- **motion_frame=25**: Larger motion window (vs 9) provides better temporal coherence
+- **mode="infinitetalk"**: Explicitly activates InfiniteTalk's long-duration optimizations
+- **dpm++_sde**: More stable scheduler for extended generation
+- **add_noise_to_samples=true**: Prevents accumulation of artifacts over windows
+- **prefetch_blocks=1**: Reduces VRAM spikes during block swapping
+
+**File Reference:** `/runpod_test_pixaroma_17sec.json`
+
 ### Custom Nodes
 
 1. **ComfyUI-WanVideoWrapper** (Required)
